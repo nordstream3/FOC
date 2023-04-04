@@ -1,4 +1,4 @@
-# F-Of-C
+# NORDSTREAM3
 Motor Controller hardware running [VESC6](https://github.com/vedderb/bldc) open source software.
 
 Schematics based on [VESC6 75V 300A Schematics](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) and [Cheap Focer2](https://github.com/shamansystems/Cheap-FOCer-2/blob/Developer-Branch/README.md).
