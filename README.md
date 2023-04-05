@@ -43,6 +43,8 @@ Contributions to the FOCAL project are welcome and encouraged. If you have any s
 
 ## Donate
 If you find this project useful and would like to support bread-and-butter for very time consuming development and maintenance, you can [donate 1$](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD) to the creator via [PayPal](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD).
+<img align="right" src="QR-kode.png">
+
 
 ## License
 FOCAL is released under the MIT License. See the LICENSE file for more information.
