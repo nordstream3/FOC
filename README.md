@@ -42,7 +42,7 @@ After installation, use the VESC Tool to configure the motor controller accordin
 Contributions to the FOCAL project are welcome and encouraged. If you have any suggestions or improvements, please open an issue or a pull request on the GitHub repository.
 
 ## Donate
-If you find this project useful and would like to support bread-and-butter for its development, you can donate to the creator via PayPal (link to be provided).
+If you find this project useful and would like to support bread-and-butter for very time consuming development and maintenance, you can [donate 1$](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD) to the creator via [PayPal](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD).
 
 ## License
 FOCAL is released under the MIT License. See the LICENSE file for more information.
