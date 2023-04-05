@@ -13,7 +13,7 @@ VECTORWAVE is an open-source motor controller board in development based on a JL
 * Compact design with double-up on fets and shunts mounted on the bottom side
 * 12V for gate drivers, 5V for USB-C and IMU, and 3.3V for CPU and op-amped current-sense amplification
 * Cheap and always up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
-<img src="ns.png"  width="500" height="300">
+<img src="ns.png"  width="489" height="434">
 
 ## Getting Started
 Prerequisites
