@@ -1,6 +1,6 @@
 # WattaFOC is watt@FOC ?
 
-# The DIY Open Source Vesc6 and FOC capable HW
+## The DIY Open Source Vesc6 and FOC capable HW
 
 watt@FOC is an open-source motor controller board in development based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 CPU and is capable of running Field Oriented Control at high power and voltages.
 
