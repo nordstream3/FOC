@@ -11,7 +11,7 @@ watt@FOC is an open-source motor controller board in development based on a JLCP
 * 2-layer smd design with individual gate drivers for all three phases
 * STM32F405 CPU
 * Onboard IMU
-* Compact design with double-up on fets and shunts mounted on the bottom side
+* Compact design with fets and shunts mounted on the bottom side
 * 12V for gate drivers, 5V for USB-C and IMU, and 3.3V for CPU and op-amped current-sense amplification
 * Cheap and always up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 <img src="ns.png"  width="367" height="455">
