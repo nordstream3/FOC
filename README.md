@@ -6,6 +6,7 @@ watt@FOC is an open-source motor controller board in development based on a JLCP
 
 ## Features
 * 75V/150A continuous rating
+* 18s battery voltage rating
 * 3-phase FOC motor control
 * 2-layer smd design with individual gate drivers for all three phases
 * STM32F405 CPU
