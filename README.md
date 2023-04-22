@@ -15,7 +15,11 @@ The KING is an open-source motor controller board in development based on a JLCP
 * Compact design with fets and shunts mounted on the bottom side
 * 12V for gate drivers, 5V for USB-C and IMU, and 3.3V for CPU and op-amped current-sense amplification
 * Cheap and always up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
-<img src="f.png"  width="367" height="455"><img src="b.png"  width="367" height="455">
+
+<div>
+<img src="f.png"  width="367" height="455" style="float:left; margin-right:10px;">
+<img src="b.png"  width="367" height="455" style="float:left;">
+</div>
 
 ## Getting Started
 Prerequisites
