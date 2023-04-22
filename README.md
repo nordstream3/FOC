@@ -53,7 +53,7 @@ If you find this project useful and would like to support bread-and-butter for v
 
 
 ## License
-The KING is released under the MIT License. See the LICENSE file for more information.
+The KING is released under the CERN Open Hardware License (OHL), developed by the European Organization for Nuclear Research. In short, it is a permissive license that allows anyone to use, modify, and distribute the licensed hardware, as long as they provide attribution to the original creators and distribute their modifications under the same license.
 
 ## Acknowledgements
 The KING is built on the work of the [VESC project](https://github.com/vedderb/bldc) and the contributions of its developers and contributors. Also this project is very much inspired by the [Cheap Focer2](https://github.com/shamansystems/Cheap-FOCer-2/blob/Developer-Branch/README.md) by SHAMAN.
