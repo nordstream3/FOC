@@ -11,10 +11,12 @@ The KING is an open-source motor controller board in development based on a JLCP
 * 3-phase FOC motor control
 * 2-layer smd design with individual gate drivers for all three phases
 * STM32F405 CPU
+* USB-C
+* CAN
 * Onboard IMU
 * Compact design with fets and shunts mounted on the bottom side
-* 12V for gate drivers, 5V for USB-C and IMU, and 3.3V for CPU and op-amped current-sense amplification
-* Cheap and always up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
+* 12V for gate drivers, 5V for CAN and IMU, and 3.3V for CPU and op-amped current-sense amplification
+* Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 
 <div>
 <img src="f.png"  width="367" height="455" style="float:left; margin-right:10px;">
@@ -28,7 +30,7 @@ To use The KING, you will need the following:
 * To wait for the Official Realease announcement
 * A brushless motor
 * A power source capable of supplying up to 75V and 150A. Minimum voltage is 12V
-* A USB cable to connect to a computer for programming and configuration
+* A USB-C cable to connect to a computer for programming and configuration
 * Motor control software, such as the VESC firmware
 
 ## Installation
