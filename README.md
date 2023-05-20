@@ -19,8 +19,8 @@ The KING is an open-source motor controller board in development based on a JLCP
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 
 <div>
-<img src="f.png"  width="367" height="455" style="float:left; margin-right:10px;">
-<img src="b.png"  width="367" height="455" style="float:left;">
+<img src="f.png"  width="275" height="404" style="float:left; margin-right:10px;">
+<img src="b.png"  width="275" height="404" style="float:left;">
 </div>
 
 ## Getting Started
