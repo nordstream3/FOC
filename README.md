@@ -1,5 +1,5 @@
 ## A King is born
-# FOC KING
+# FOC / KING
 
 ## The DIY Open Source Vesc6 and FOC capable HW
 
