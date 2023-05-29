@@ -41,8 +41,8 @@
 #define LED_RED_ON()			palSetPad(LED_RED_GPIO, LED_RED_PIN)
 #define LED_RED_OFF()			palClearPad(LED_RED_GPIO, LED_RED_PIN)
 
-#define CURRENT_FILTER_ON()		palSetPad(GPIOC, 13)
-#define CURRENT_FILTER_OFF()	palClearPad(GPIOC, 13)
+//#define CURRENT_FILTER_ON()		palSetPad(GPIOC, 13)
+//#define CURRENT_FILTER_OFF()	palClearPad(GPIOC, 13)
 
 /*
  * ADC Vector
