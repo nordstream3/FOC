@@ -21,25 +21,38 @@
 #define HW_FOC_KING_CORE_H_
 
 #define HW_NAME                 "FOC_KING"
-#define PRE_VERSION
+//#define PRE_VERSION
 
 // HW properties
 #define HW_HAS_3_SHUNTS
+//#define HW_HAS_PHASE_FILTERS
 
 // Macros
 #define LED_GREEN_GPIO			GPIOB
 #define LED_GREEN_PIN			5
 #define LED_RED_GPIO			GPIOB
-#ifdef PRE_VERSION
-#define LED_RED_PIN			7
-#else
 #define LED_RED_PIN			6
-#endif
 
 #define LED_GREEN_ON()			palSetPad(LED_GREEN_GPIO, LED_GREEN_PIN)
 #define LED_GREEN_OFF()			palClearPad(LED_GREEN_GPIO, LED_GREEN_PIN)
 #define LED_RED_ON()			palSetPad(LED_RED_GPIO, LED_RED_PIN)
 #define LED_RED_OFF()			palClearPad(LED_RED_GPIO, LED_RED_PIN)
+
+// Shutdown pin
+#define HW_SHUTDOWN_GPIO		GPIOC
+#define HW_SHUTDOWN_PIN			4
+#define HW_SHUTDOWN_HOLD_ON()	palSetPad(HW_SHUTDOWN_GPIO, HW_SHUTDOWN_PIN)
+#define HW_SHUTDOWN_HOLD_OFF()	palClearPad(HW_SHUTDOWN_GPIO, HW_SHUTDOWN_PIN)
+#define HW_SAMPLE_SHUTDOWN()	hw_sample_shutdown_button()
+
+// Hold shutdown pin early to wake up on short pulses
+#define HW_EARLY_INIT()			palSetPadMode(HW_SHUTDOWN_GPIO, HW_SHUTDOWN_PIN, PAL_MODE_OUTPUT_PUSHPULL); \
+								HW_SHUTDOWN_HOLD_ON();
+
+//#define PHASE_FILTER_GPIO		GPIOC
+//#define PHASE_FILTER_PIN		9
+//#define PHASE_FILTER_ON()		palSetPad(PHASE_FILTER_GPIO, PHASE_FILTER_PIN)
+//#define PHASE_FILTER_OFF()		palClearPad(PHASE_FILTER_GPIO, PHASE_FILTER_PIN)
 
 //#define CURRENT_FILTER_ON()		palSetPad(GPIOC, 13)
 //#define CURRENT_FILTER_OFF()	palClearPad(GPIOC, 13)
@@ -47,21 +60,21 @@
 /*
  * ADC Vector
  *
- * 0:   IN1     SENS1
- * 1:   IN12    SENS2
- * 2:   IN11    SENS3
- * 3:   IN2     CURR1
- * 4:   IN13    CURR2
- * 5:   IN10    CURR3
- * 6:   IN5     ADC_EXT1
- * 7:   IN6     ADC_EXT2
+ * 0:   IN2     CURR1
+ * 1:   IN1     CURR2
+ * 2:   IN0     CURR3
+ * 3:   IN13    SENS1
+ * 4:   IN12    SENS2
+ * 5:   IN11    SENS3
+ * 6:   IN5     PA5 (ADC_EXT1)
+ * 7:   IN6     PA6 (ADC_EXT2)
  * 8:   IN3     TEMP_MOS
- * 9:   IN14    TEMP_MOTOR
- * 10:  IN15    Shutdown
- * 11:  IN0     AN_IN
+ * 9:   IN14    PC4 (TEMP_MOTOR)
+ * 10:  IN15    PC5 (Shutdown)
+ * 11:  IN10    AN_IN
  * 12:  Vrefint
- * 13:  IN0     SENS1
- * 14:  IN1     SENS2
+ * 13:  IN13    SENS1
+ * 14:  IN12    SENS2
  */
 
 #define HW_ADC_CHANNELS         15
@@ -69,19 +82,19 @@
 #define HW_ADC_NBR_CONV         5
 
 // ADC Indexes
-#define ADC_IND_SENS1           0
-#define ADC_IND_SENS2           1
-#define ADC_IND_SENS3           2
-#define ADC_IND_CURR1           3
-#define ADC_IND_CURR2           4
-#define ADC_IND_CURR3           5
-#define ADC_IND_VIN_SENS        11
+#define ADC_IND_CURR1           0
+#define ADC_IND_CURR2           1
+#define ADC_IND_CURR3           2
+#define ADC_IND_SENS1           3
+#define ADC_IND_SENS2           4
+#define ADC_IND_SENS3           5
 #define ADC_IND_EXT             6
 #define ADC_IND_EXT2            7
 #define ADC_IND_TEMP_MOS        8
 #define ADC_IND_TEMP_MOTOR      9
-#define ADC_IND_VREFINT         12
 #define ADC_IND_SHUTDOWN        10
+#define ADC_IND_VIN_SENS        11
+#define ADC_IND_VREFINT         12
 
 // ADC macros and settings
 
@@ -102,7 +115,7 @@
 #define CURRENT_SHUNT_RES       0.00025
 #endif
 
-#define INVERTED_SHUNT_POLARITY
+//#define INVERTED_SHUNT_POLARITY
 
 
 // Input voltage
@@ -118,6 +131,8 @@
 // Voltage on ADC channel
 #define ADC_VOLTS(ch)           ((float)ADC_Value[ch] / 4096.0 * V_REG)
 
+
+
 // Double samples in beginning and end for positive current measurement.
 // Useful when the shunt sense traces have noise that causes offset.
 #ifndef CURR1_DOUBLE_SAMPLE
@@ -131,10 +146,10 @@
 #endif
 
 // COMM-port ADC GPIOs
-#define HW_ADC_EXT_GPIO         GPIOA
-#define HW_ADC_EXT_PIN          5
-#define HW_ADC_EXT2_GPIO        GPIOA
-#define HW_ADC_EXT2_PIN         6
+//#define HW_ADC_EXT_GPIO         GPIOA
+//#define HW_ADC_EXT_PIN          5
+//#define HW_ADC_EXT2_GPIO        GPIOA
+//#define HW_ADC_EXT2_PIN         6
 
 // UART Peripheral
 #define HW_UART_DEV             SD3
@@ -144,21 +159,44 @@
 #define HW_UART_RX_PORT         GPIOB
 #define HW_UART_RX_PIN          11
 
+
+/*
+ * #define HW_HAS_PERMANENT_NRF
+ *
+ * The hardware has a permanently mounted NRF24. Also requires defining its pins:
+ * #define NRF_PORT_CSN			GPIOB
+ * #define NRF_PIN_CSN			12
+ * #define NRF_PORT_SCK			GPIOB
+ * #define NRF_PIN_SCK			4
+ * #define NRF_PORT_MOSI		GPIOB
+ * #define NRF_PIN_MOSI			3
+ * #define NRF_PORT_MISO		GPIOD
+ * #define NRF_PIN_MISO			2
+ *
+ * If the NRF is not detected during initialization, the pins will be remapped
+ * to the COMM port if the NRF app is used. A hook to run if initialization fails
+ * can also be defined:
+ *
+ * #define HW_PERMANENT_NRF_FAILED_HOOK()
+ */
+
+
+
 // NRF pins
-#define NRF_PORT_CSN			GPIOB
-#define NRF_PIN_CSN			7
-#define NRF_PORT_SCK			GPIOB
-#define NRF_PIN_SCK			4
-#define NRF_PORT_MOSI			GPIOB
-#define NRF_PIN_MOSI			3
-#define NRF_PORT_MISO			GPIOD
-#define NRF_PIN_MISO			2
+//#define NRF_PORT_CSN			GPIOB
+//#define NRF_PIN_CSN			7
+//#define NRF_PORT_SCK			GPIOB
+//#define NRF_PIN_SCK			4
+//#define NRF_PORT_MOSI			GPIOB
+//#define NRF_PIN_MOSI			3
+//#define NRF_PORT_MISO			GPIOD
+//#define NRF_PIN_MISO			2
 
 // NRF SWD
-#define NRF5x_SWDIO_GPIO        GPIOB
-#define NRF5x_SWDIO_PIN         4
-#define NRF5x_SWCLK_GPIO        GPIOB
-#define NRF5x_SWCLK_PIN         3
+//#define NRF5x_SWDIO_GPIO        GPIOB
+//#define NRF5x_SWDIO_PIN         4
+//#define NRF5x_SWCLK_GPIO        GPIOB
+//#define NRF5x_SWCLK_PIN         3
 
 // ICU Peripheral for servo decoding
 #define HW_USE_SERVO_TIM4
@@ -168,7 +206,7 @@
 #define HW_ICU_CHANNEL			ICU_CHANNEL_1
 #define HW_ICU_GPIO_AF			GPIO_AF_TIM4
 #define HW_ICU_GPIO				GPIOB
-#define HW_ICU_PIN				6
+#define HW_ICU_PIN				7
 
 // I2C Peripheral
 #define HW_I2C_DEV              I2CD2
@@ -234,8 +272,8 @@
 #define READ_HALL3()            palReadPad(HW_HALL_ENC_GPIO3, HW_HALL_ENC_PIN3)
 
 // Override dead time. See the stm32f4 reference manual for calculating this value.
-#define HW_DEAD_TIME_NSEC		1000.0
-//#define HW_DEAD_TIME_NSEC       660.0
+//#define HW_DEAD_TIME_NSEC		1000.0
+#define HW_DEAD_TIME_NSEC       660.0
 
 // Default setting overrides
 #ifndef MCCONF_L_MIN_VOLTAGE
