@@ -60,6 +60,12 @@ void hw_init_gpio(void) {
             PAL_MODE_OUTPUT_PUSHPULL |
             PAL_STM32_OSPEED_HIGHEST);
 
+    // Enable gate
+    /*palSetPadMode(GPIOA, 6,
+			PAL_MODE_OUTPUT_PUSHPULL |
+			PAL_STM32_OSPEED_HIGHEST);
+    ENABLE_GATE();*/
+
     // Gate Drivers
     // GPIOA Configuration: Channel 1 to 3 as alternate function push-pull
     palSetPadMode(GPIOA, 8, PAL_MODE_ALTERNATE(GPIO_AF_TIM1) |
@@ -98,6 +104,7 @@ void hw_init_gpio(void) {
     //palSetPadMode(BRK_GPIO, BRK_PIN, PAL_MODE_ALTERNATE(GPIO_AF_TIM1));
 //#endif
 
+
     // ADC Pins
     palSetPadMode(GPIOA, 0, PAL_MODE_INPUT_ANALOG);
     palSetPadMode(GPIOA, 1, PAL_MODE_INPUT_ANALOG);
@@ -124,22 +131,22 @@ void hw_setup_adc_channels(void) {
     // ADC1 regular channels
     ADC_RegularChannelConfig(ADC1, ADC_Channel_2, 1, ADC_SampleTime_15Cycles); //CURR1
     ADC_RegularChannelConfig(ADC1, ADC_Channel_13, 2, ADC_SampleTime_15Cycles); //SENS1
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_5, 3, ADC_SampleTime_15Cycles); //ADC_EXT1
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 4, ADC_SampleTime_15Cycles); //TEMP_MOTOR
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_4, 3, ADC_SampleTime_15Cycles); //ADC_EXT1
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 4, ADC_SampleTime_15Cycles); //MOTOR TEMP
     ADC_RegularChannelConfig(ADC1, ADC_Channel_Vrefint, 5, ADC_SampleTime_15Cycles); //Vrefint
 
     // ADC2 regular channels
     ADC_RegularChannelConfig(ADC2, ADC_Channel_1, 1, ADC_SampleTime_15Cycles); //CURR2
     ADC_RegularChannelConfig(ADC2, ADC_Channel_12, 2, ADC_SampleTime_15Cycles); //SENS2
-    ADC_RegularChannelConfig(ADC2, ADC_Channel_6, 3, ADC_SampleTime_15Cycles); //ADC_EXT2
-    ADC_RegularChannelConfig(ADC2, ADC_Channel_15, 4, ADC_SampleTime_15Cycles); //Shutdown
+    ADC_RegularChannelConfig(ADC2, ADC_Channel_5, 3, ADC_SampleTime_15Cycles); //ADC_EXT2
+    ADC_RegularChannelConfig(ADC2, ADC_Channel_7, 4, ADC_SampleTime_15Cycles); //Shutdown
     ADC_RegularChannelConfig(ADC2, ADC_Channel_13, 5, ADC_SampleTime_15Cycles); //SENS1
 
     // ADC3 regular channels
     ADC_RegularChannelConfig(ADC3, ADC_Channel_0, 1, ADC_SampleTime_15Cycles); //CURR3
     ADC_RegularChannelConfig(ADC3, ADC_Channel_11, 2, ADC_SampleTime_15Cycles); //SENS3
     ADC_RegularChannelConfig(ADC3, ADC_Channel_3, 3, ADC_SampleTime_15Cycles); //TEMP_MOS
-    ADC_RegularChannelConfig(ADC3, ADC_Channel_0, 4, ADC_SampleTime_15Cycles); //AN_IN
+    ADC_RegularChannelConfig(ADC3, ADC_Channel_10, 4, ADC_SampleTime_15Cycles); //AN_IN
     ADC_RegularChannelConfig(ADC3, ADC_Channel_12, 5, ADC_SampleTime_15Cycles); //SENS2
 
     // Injected channels

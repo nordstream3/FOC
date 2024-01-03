@@ -28,10 +28,14 @@
 //#define HW_HAS_PHASE_FILTERS
 
 // Macros
+
+//#define ENABLE_GATE()			palSetPad(GPIOA, 6)
+//#define DISABLE_GATE()			palClearPad(GPIOA, 6)
+
 #define LED_GREEN_GPIO			GPIOB
 #define LED_GREEN_PIN			5
 #define LED_RED_GPIO			GPIOB
-#define LED_RED_PIN			6
+#define LED_RED_PIN			    6
 
 #define LED_GREEN_ON()			palSetPad(LED_GREEN_GPIO, LED_GREEN_PIN)
 #define LED_GREEN_OFF()			palClearPad(LED_GREEN_GPIO, LED_GREEN_PIN)
@@ -91,6 +95,7 @@
 #define ADC_IND_EXT             6
 #define ADC_IND_EXT2            7
 #define ADC_IND_TEMP_MOS        8
+//#define ADC_IND_EXT3            9
 #define ADC_IND_TEMP_MOTOR      9
 #define ADC_IND_SHUTDOWN        10
 #define ADC_IND_VIN_SENS        11
@@ -152,33 +157,33 @@
 //#define HW_ADC_EXT2_PIN         6
 
 // UART Peripheral
-#define HW_UART_DEV             SD3
-#define HW_UART_GPIO_AF         GPIO_AF_USART3
-#define HW_UART_TX_PORT         GPIOB
-#define HW_UART_TX_PIN          10
-#define HW_UART_RX_PORT         GPIOB
-#define HW_UART_RX_PIN          11
+#define HW_UART_DEV             SD6
+#define HW_UART_GPIO_AF         GPIO_AF_USART6
+#define HW_UART_TX_PORT         GPIOC
+#define HW_UART_TX_PIN          6
+#define HW_UART_RX_PORT         GPIOC
+#define HW_UART_RX_PIN          7
 
 
+
+/*#define HW_HAS_PERMANENT_NRF
+ 
+// The hardware has a permanently mounted NRF24. Also requires defining its pins:
+#define NRF_PORT_CSN			GPIOB
+#define NRF_PIN_CSN			12
+#define NRF_PORT_SCK			GPIOB
+#define NRF_PIN_SCK			4
+#define NRF_PORT_MOSI		GPIOB
+#define NRF_PIN_MOSI			3
+#define NRF_PORT_MISO		GPIOD
+#define NRF_PIN_MISO			2*/
 /*
- * #define HW_HAS_PERMANENT_NRF
- *
- * The hardware has a permanently mounted NRF24. Also requires defining its pins:
- * #define NRF_PORT_CSN			GPIOB
- * #define NRF_PIN_CSN			12
- * #define NRF_PORT_SCK			GPIOB
- * #define NRF_PIN_SCK			4
- * #define NRF_PORT_MOSI		GPIOB
- * #define NRF_PIN_MOSI			3
- * #define NRF_PORT_MISO		GPIOD
- * #define NRF_PIN_MISO			2
- *
  * If the NRF is not detected during initialization, the pins will be remapped
  * to the COMM port if the NRF app is used. A hook to run if initialization fails
  * can also be defined:
- *
- * #define HW_PERMANENT_NRF_FAILED_HOOK()
  */
+ // #define HW_PERMANENT_NRF_FAILED_HOOK()
+ 
 
 
 
@@ -203,7 +208,7 @@
 #define HW_ICU_TIMER			TIM4
 #define HW_ICU_TIM_CLK_EN()		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE)
 #define HW_ICU_DEV				ICUD4
-#define HW_ICU_CHANNEL			ICU_CHANNEL_1
+#define HW_ICU_CHANNEL			ICU_CHANNEL_2
 #define HW_ICU_GPIO_AF			GPIO_AF_TIM4
 #define HW_ICU_GPIO				GPIOB
 #define HW_ICU_PIN				7
@@ -217,22 +222,22 @@
 #define HW_I2C_SDA_PIN          11
 
 // Hall/encoder pins
-#define HW_HALL_ENC_GPIO1       GPIOC
-#define HW_HALL_ENC_PIN1        6
-#define HW_HALL_ENC_GPIO2       GPIOC
-#define HW_HALL_ENC_PIN2        7
-#define HW_HALL_ENC_GPIO3       GPIOC
-#define HW_HALL_ENC_PIN3        8
-#define HW_ENC_TIM              TIM3
-#define HW_ENC_TIM_AF           GPIO_AF_TIM3
-#define HW_ENC_TIM_CLK_EN()     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE)
-#define HW_ENC_EXTI_PORTSRC     EXTI_PortSourceGPIOC
-#define HW_ENC_EXTI_PINSRC      EXTI_PinSource8
-#define HW_ENC_EXTI_CH          EXTI9_5_IRQn
-#define HW_ENC_EXTI_LINE        EXTI_Line8
-#define HW_ENC_EXTI_ISR_VEC     EXTI9_5_IRQHandler
-#define HW_ENC_TIM_ISR_CH       TIM3_IRQn
-#define HW_ENC_TIM_ISR_VEC      TIM3_IRQHandler
+#define HW_HALL_ENC_GPIO1		GPIOC
+#define HW_HALL_ENC_PIN1		6
+#define HW_HALL_ENC_GPIO2		GPIOC
+#define HW_HALL_ENC_PIN2		7
+#define HW_HALL_ENC_GPIO3		GPIOC
+#define HW_HALL_ENC_PIN3		8
+#define HW_ENC_TIM				TIM3
+#define HW_ENC_TIM_AF			GPIO_AF_TIM3
+#define HW_ENC_TIM_CLK_EN()		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE)
+#define HW_ENC_EXTI_PORTSRC		EXTI_PortSourceGPIOC
+#define HW_ENC_EXTI_PINSRC		EXTI_PinSource8
+#define HW_ENC_EXTI_CH			EXTI9_5_IRQn
+#define HW_ENC_EXTI_LINE		EXTI_Line8
+#define HW_ENC_EXTI_ISR_VEC		EXTI9_5_IRQHandler
+#define HW_ENC_TIM_ISR_CH		TIM3_IRQn
+#define HW_ENC_TIM_ISR_VEC		TIM3_IRQHandler
 
 // SPI pins
 #define HW_SPI_DEV              SPID1
@@ -272,8 +277,8 @@
 #define READ_HALL3()            palReadPad(HW_HALL_ENC_GPIO3, HW_HALL_ENC_PIN3)
 
 // Override dead time. See the stm32f4 reference manual for calculating this value.
-//#define HW_DEAD_TIME_NSEC		1000.0
-#define HW_DEAD_TIME_NSEC       660.0
+#define HW_DEAD_TIME_NSEC		1000.0
+//#define HW_DEAD_TIME_NSEC       660.0
 
 // Default setting overrides
 #ifndef MCCONF_L_MIN_VOLTAGE
