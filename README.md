@@ -30,6 +30,8 @@ FOC is short of Field Oriented Control and KING is because it's the King. The ha
 <img src="b.png"  width="275" height="404" style="float:left;">
 </div>
 
+[FOCKING thread on esk8](https://forum.esk8.news/t/f-of-c-open-source-free-of-charge-vesc6-board-in-development-schematics-available/74888/277)
+
 ## Getting Started
 Prerequisites
 To use The FOCKING, you will need the following:
