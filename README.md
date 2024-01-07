@@ -26,15 +26,15 @@ FOC is short of Field Oriented Control and KING is because it's the King. The ha
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 
 <div>
-<img src="/images/foc_setup.jpg"  width="275" style="float:left; margin-right:10px;">
-<img src="/images/focpill.jpg"  width="275" style="float:left; margin-right:10px;">
-<img src="/images/power.jpg"  width="275" style="float:left;">
+<img src="/images/foc_setup.jpg"  width="200" style="float:left; margin-right:10px;">
+<img src="/images/focpill.jpg"  width="200" style="float:left; margin-right:10px;">
+<img src="/images/power.jpg"  width="200" style="float:left;">
 </div>
 
 <div>
-<img src="/images/foc_assembly.jpg"  width="275" style="float:left; margin-right:10px;">
-<img src="/images/f.png"  width="275" style="float:left; margin-right:10px;">
-<img src="/images/b.png"  width="275" style="float:left;">
+<img src="/images/foc_assembly.jpg"  width="200" style="float:left; margin-right:10px;">
+<img src="/images/f.png"  width="200" style="float:left; margin-right:10px;">
+<img src="/images/b.png"  width="200" style="float:left;">
 </div>
 
 [FOCKING thread on esk8](https://forum.esk8.news/t/f-of-c-open-source-free-of-charge-vesc6-board-in-development-schematics-available/74888/277)
