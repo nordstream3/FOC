@@ -52,10 +52,10 @@ To use The FOCKING, you will need the following:
 To install the FOCKING board, follow these steps:
 
 * Order the PCB from JLCPCB using the provided gerber files
-* JLCPCB can offer the service of mounting all components, with the exception of shunts and mosfets
+* JLCPCB can offer the service of mounting all components, with the exception of mosfets
 * Purchase the necessary components (BOM available in the repository)
 * Solder the remaining components onto the PCB
-* Program the firmware onto the board using a programmer (JTAG or Stm32f4Discovery)
+* Program the firmware onto the board using a programmer (STLINK, Stm32f4Discovery, or an existing VESC)
 * Connect the motor, power source, and USB cable
 
 ## Usage
