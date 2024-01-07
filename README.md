@@ -24,6 +24,7 @@ FOC is short of Field Oriented Control and KING is because it's the King. The ha
 * Compact design with fets mounted on the bottom side
 * 12V for gate drivers, 5V for CAN and IMU, and 3.3V for MCU and op-amped current-sense amplification
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
+* **Dimensions of assembled board: 65 x 78 mm**
 
 <div>
 <img src="/images/foc_setup.jpg"  width="200" style="float:left; margin-right:10px;">
