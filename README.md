@@ -12,16 +12,16 @@ The FOCKING is an open-source motor controller board in development based on a J
 FOC is short of Field Oriented Control and KING is because it's the King. The hardware is separated in 3 sub-modules: Power, STM32F405 FOCPILL, and the main module with FOC related components. The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
 
 ## Features
-* 75V/150A continuous rating
+* 75V/300A continuous rating
 * 18s battery voltage rating
 * 3-phase FOC motor control
-* 4-layer smd design with individual gate drivers for all three phases
+* 4-layer pcb design with individual gate drivers for all three phases
 * STM32F405 MCU
 * USB-C
 * CAN
 * Onboard IMU
 * 12V AUX Power (for e.g. light or ?)
-* Compact design with fets and shunts mounted on the bottom side
+* Compact design with fets mounted on the bottom side
 * 12V for gate drivers, 5V for CAN and IMU, and 3.3V for MCU and op-amped current-sense amplification
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 
