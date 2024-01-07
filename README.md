@@ -26,8 +26,15 @@ FOC is short of Field Oriented Control and KING is because it's the King. The ha
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
 
 <div>
-<img src="f.png"  width="275" height="404" style="float:left; margin-right:10px;">
-<img src="b.png"  width="275" height="404" style="float:left;">
+<img src="/images/foc_setup.jpg"  width="275" style="float:left; margin-right:10px;">
+<img src="/images/focpill.jpg"  width="275" style="float:left; margin-right:10px;">
+<img src="/images/power.jpg"  width="275" style="float:left;">
+</div>
+
+<div>
+<img src="/images/foc_assembly.jpg"  width="275" style="float:left; margin-right:10px;">
+<img src="/images/f.png"  width="275" style="float:left; margin-right:10px;">
+<img src="/images/b.png"  width="275" style="float:left;">
 </div>
 
 [FOCKING thread on esk8](https://forum.esk8.news/t/f-of-c-open-source-free-of-charge-vesc6-board-in-development-schematics-available/74888/277)
@@ -35,8 +42,6 @@ FOC is short of Field Oriented Control and KING is because it's the King. The ha
 ## Getting Started
 Prerequisites
 To use The FOCKING, you will need the following:
-
-* To wait for the Official Realease announcement
 * A brushless motor
 * A power source capable of supplying up to 75V and 150A. Minimum voltage is 16V
 * A USB-C cable to connect to a computer for programming and configuration
@@ -60,7 +65,7 @@ Contributions to The KING project are welcome and encouraged. If you have any su
 
 ## Donate
 If you find this project useful and would like to support bread-and-butter for very time consuming development and maintenance, you can [donate 1$](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD) to the creator via [PayPal](https://www.paypal.com/donate/?business=R5QUC7RNEPKDC&no_recurring=0&item_name=A+small+but+important+contribution+for+Development+and+Maintenance.+Thank+You+very+much.&currency_code=USD).
-<img align="right" src="QR-kode.png">
+<img align="right" src="/images/QR-kode.png">
 
 
 ## License
