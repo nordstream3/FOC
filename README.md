@@ -7,7 +7,7 @@
 CURRENT PRICE TAG AT JLCPCB FOR 5 BOARDS WITH ALL COMPONENTS ASSEMBLED (not including FETS and Power Capacitors):
   $134.61**
 
-The FOCKING is an open-source motor controller board in development based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running Field Oriented Control at high power and voltages.
+The FOCKING is an open-source motor controller board in development based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running FOC at high power and voltages.
 
 FOC is short of Field Oriented Control and KING is because it's the King. The hardware is separated in 3 sub-modules: Power, STM32F405 FOCPILL, and the main module with FOC related components. The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
 
