@@ -2,7 +2,7 @@
 
 When the board arrive from the pcb manufacturer it will look like this:
 
-[image]
+[Image]
 
 Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FOCPILL and POWER module in particular, as the traces here are close to the edges.
 
@@ -12,9 +12,10 @@ When the modules are separated you can straighten the edges with sandpaper or a 
 
 ## Verify the FOCPILL hardware
 
-The FOCPILL can be powered from USB +5V by bridging the two pads next to the USB-C connector.
+The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
-[image of bridged pads]
+<img src="../images/focpill.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/765e72d6-6183-4d98-8290-5aad64784e7b)"  width="400" style="float:left; margin-right:10px;">
 
 Connect the FOCPILL via a USB-C cable to your computer. No LEDs on the board will light up before you have uploaded the VESC Firmware.
 
@@ -36,9 +37,9 @@ Once you have uploaded the firmware and the FOCPILL is booted, the LEDs on the b
 
 ## Verify the POWER hardware
 
-Connect the Power Module to a power supply as shown on the image below. Be VERY careful not to short the connections. Set the power to minimum +16V, and I advise you to set a current limit of 0.1 Amps.
+Connect the Power Module to a power supply as shown on the image below. Be VERY careful not to short the connections. Set the power to minimum +16V, and I advise you to **set a current limit of 0.1 Amps**.
 
-[Image of powered Power Module]
+<img src="../images/power.jpg"  width="400" style="float:left; margin-right:10px;">
 
 The module is working properly if the LED on the module shows a constant blue light.
 
@@ -52,13 +53,14 @@ You can now temporarily attact the Power Module to the Main Module. You can bend
 
 [image of tmp connected modules - with blue light]
 
-If you apply min. +16V to the main connectors on the Main Module, the blue LED on the Power Module should light up. Still current limit of 0.1 Amps.
+If you apply min. +16V to the main connectors on the Main Module, the blue LED on the Power Module should light up. Still **current limit of 0.1 Amps**.
 
 ## Connect FOCPILL and Main Module together
 
 If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
+**current limit of 0.1 Amps**
 
-
+<img src="../images/foc_assembly.jpg"  width="400" style="float:left; margin-right:10px;">
 
 # Markdown syntax guide
 
