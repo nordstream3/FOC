@@ -15,7 +15,7 @@ When the modules are separated you can straighten the edges with sandpaper or a 
 The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
 <img src="../images/focpill.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="https://github.com/nordstream3/FOC/assets/129880401/765e72d6-6183-4d98-8290-5aad64784e7b)"  width="400" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/765e72d6-6183-4d98-8290-5aad64784e7b)"  width="200" style="float:left; margin-right:10px;">
 
 Connect the FOCPILL via a USB-C cable to your computer. No LEDs on the board will light up before you have uploaded the VESC Firmware.
 
