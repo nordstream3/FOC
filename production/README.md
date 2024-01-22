@@ -98,9 +98,15 @@ GND
 | +3V      |
 | +5V      |
 
-In particular, the GND terminals are very difficult to heat to sufficient temperatures for any solid connection, without using pins. But if we look at the pcb, these terminals are located under JST connectors, which already are "pinned".
+In particular, the GND terminals are very difficult to heat to sufficient temperatures, without using pins. But if we look at the pcb, these terminals are located under JST connectors, which already are "pinned".
 
-Start by aligning the modules so the FOC/PILL is located on the back-side of the MAiN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
+[Image]
+
+1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAiN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
+2. Fix the modules by soldering a single pin-hole, and make sure that you use a fair amount of solder and heat, and make sure that there is virtually NO gap between the modules. The more of a gap the more difficult the whole mounting procedure will be.
+3. When the modules are fixed together with solder at a single pin-hole, you should temporarily remove the plastic part of the JST connectors, using e.g. a hobby knife or pliers.
+4. Now you can solder the exposed JST pins on the front side of the main module, before putting the plastic parts of the JST connectors back on their corresponding pins.
+5. 
 
 
 If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
