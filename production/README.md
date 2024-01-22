@@ -27,6 +27,21 @@ The FOCPILL can be powered from USB +5V by temporarily bridging the two pads nex
 <img src="../images/20240120_121407.jpg" width="300" style="float:left;">
 </div>
 
+Now, Connect the FOC/PILL via a USB-C cable to your computer. In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
+
+[Existing VESC hardware](https://www.youtube.com/watch?v=PFFiVxFHDM4&t=312s)
+
+[stm32f4 Discovery](https://geekilyinteresting.wordpress.com/2014/05/04/using-your-stm32f4-discovery-board-as-a-programmer-and-debugger/)
+
+[ST-LINK windows](https://www.youtube.com/watch?v=etglJKNJSCY)
+
+[stlink-gui on Ubuntu Linux](https://www.youtube.com/watch?v=VhLIKFwoGjo)
+
+<img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
+
+There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough.
+
+
 
 
 <img src="../images/focpill.jpg"  width="400" style="float:left; margin-right:10px;">
@@ -36,13 +51,7 @@ Connect the FOCPILL via a USB-C cable to your computer. No LEDs on the board wil
 
 Upload Boot Loader and FOCKING VESC6 firmware binaries using e.g. STLINK, stm32f4 Discovery Board or an existing VESC as a programmer. Here are guides on how to do this:
 
-[Existing VESC hardware](https://www.youtube.com/watch?v=PFFiVxFHDM4&t=312s)
 
-[stm32f4 Discovery](https://geekilyinteresting.wordpress.com/2014/05/04/using-your-stm32f4-discovery-board-as-a-programmer-and-debugger/)
-
-[ST-LINK windows](https://www.youtube.com/watch?v=etglJKNJSCY)
-
-[stlink-gui on Ubuntu Linux](https://www.youtube.com/watch?v=VhLIKFwoGjo)
 
 Bootloader and FOCKING binaries are located in the "binaries" folder.
 
@@ -79,7 +88,7 @@ If this is your first time assembling a board, I advise you to connect the modul
 
 
 <img src="../images/20240120_115643.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
+
 <img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
