@@ -1,6 +1,6 @@
 # Assembly Guide
 
-The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, which you will need to separate using a manual saw. JLCPCB will charge you for the number of designs, but this is a single design assembled to a single unit. The separation is just for convinience purposes and none of the modules will work on their own.
+The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, which you will need to separate using a manual saw. JLCPCB will charge you for the number of designs, but this is a single design assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
 <div>
 <img src="../images/20240120_114045.jpg" width="300" style="float:left; margin-right:10px;">
