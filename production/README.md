@@ -59,19 +59,23 @@ Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in 
 Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in Vesc Tool under the name "FOC_KING".
 
 <div>
-<img src="../images/20240120_121016.jpg" width="300" style="float:left;">
-<img src="../images/Screenshot from 2024-01-20 15-52-31.png" width="400" style="float:left;">
+<img src="../images/20240120_121016.jpg" width="450" style="float:left;">
+<img src="../images/Screenshot from 2024-01-20 15-52-31.png" width="300" style="float:left;">
 </div>
+
 
 **REMEMBER** to remove the solder bridge between the pads again, as the assembled FOCKING will **NOT** work properly if powered by USB.
 
-## Verify the POWER hardware
+## Step 2: Verify the POWER hardware
 
-Connect the Power Module to a power supply as shown on the image below. Be VERY careful not to short the connections. Set the power to minimum +16V, and I advise you to **set a current limit of 0.1 Amps**.
+Connect the Power Module to a power supply as shown on the image below. Be VERY careful not to short the connections. Set the voltage to +16V with a **current limit of 0.1 Amps**.
 
+<div>
 <img src="../images/power.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_155628.jpg"  width="100" style="float:left;">
+</div>
 
-The module is working properly if the LED on the module shows a constant blue light.
+The module is working properly when the LED on the module shows a constant blue light.
 
 ## Solder power connector pins
 
@@ -117,7 +121,6 @@ If this is your first time assembling a board, I advise you to connect the modul
 <img src="../images/20240120_154718.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_154834.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_155628.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="400" style="float:left; margin-right:10px;">
