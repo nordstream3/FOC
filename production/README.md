@@ -21,6 +21,14 @@ Any error that you accidentally introduce to the board is really not a big deal,
 
 The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
+<div>
+<img src="../images/20240120_115645.jpg" width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_115723.jpg" width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_121407.jpg" width="300" style="float:left;">
+</div>
+
+
+
 <img src="../images/focpill.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="https://github.com/nordstream3/FOC/assets/129880401/765e72d6-6183-4d98-8290-5aad64784e7b)"  width="200" style="float:left; margin-right:10px;">
 
@@ -71,12 +79,9 @@ If this is your first time assembling a board, I advise you to connect the modul
 
 
 <img src="../images/20240120_115643.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_115645.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_115723.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_121407.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123245.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123247.jpg"  width="400" style="float:left; margin-right:10px;">
