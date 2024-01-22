@@ -12,7 +12,12 @@ Use a suitable manual hand saw for separating the 3 modules. Be careful not to d
 
 When the modules are separated you should straighten the edges with sandpaper or a file.
 
-## Verify the FOCPILL hardware
+## How to avoid creating solder bridges and other errors by testing throughout the assembly
+Any error that you accidentally introduce to the board is really not a big deal, as long as you catch the error early on. This is why it is very important to verify the hardware after each step in the assembly. Test or you will regret that you didn't!
+
+
+
+## Uploading Firmware and testing the FOC/PILL
 
 The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
