@@ -1,14 +1,16 @@
 # Assembly Guide
 
-When the board arrive from the pcb manufacturer it will look like this:
+The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, which you will need to separate using a manual saw. JLCPCB will charge you for the number of designs, but this is a single design assembled to a single unit. The separation is just for convinience purposes and none of the modules will work on their own.
 
-[Image]
+<div>
+<img src="../images/20240120_114045.jpg" width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_114333.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_115154.jpg" width="300" style="float:left;">
+</div>
 
-Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FOCPILL and POWER module in particular, as the traces here are close to the edges.
+Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FOCPILL and POWER modules in particular, as the traces here are close to the edges.
 
-When the modules are separated you can straighten the edges with sandpaper or a file.
-
-[image of saparated modules]
+When the modules are separated you should straighten the edges with sandpaper or a file.
 
 ## Verify the FOCPILL hardware
 
@@ -61,6 +63,67 @@ If this is your first time assembling a board, I advise you to connect the modul
 **current limit of 0.1 Amps**
 
 <img src="../images/foc_assembly.jpg"  width="400" style="float:left; margin-right:10px;">
+
+
+<img src="../images/20240120_115643.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_115645.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_115723.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_121407.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_123245.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_123247.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_134931.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_135212.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_135625.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144254.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144436.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_151904.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_153355.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154146.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154516.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154718.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154834.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_155628.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 12-05-25.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 12-05-59.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 15-52-31.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-51-23.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-52-16.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-52-59.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 16-53-25.png"  width="400" style="float:left; margin-right:10px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Markdown syntax guide
 
