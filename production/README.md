@@ -1,6 +1,6 @@
 # Assembly Guide
 
-The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, which you will need to separate using a manual saw. JLCPCB will charge you for the number of designs, but this is a single design assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
+The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
 <div>
 <img src="../images/20240120_114045.jpg" width="300" style="float:left; margin-right:10px;">
@@ -12,9 +12,11 @@ Use a suitable manual hand saw for separating the 3 modules. Be careful not to d
 
 When the modules are separated you should straighten the edges with sandpaper or a file.
 
-## How to avoid creating solder bridges and other errors by testing throughout the assembly
-Any error that you accidentally introduce to the board is really not a big deal, as long as you catch the error early on. This is why it is very important to verify the hardware after each step in the assembly. Test or you will regret that you didn't!
+## How to avoid creating solder bridges and other errors by testing throughout the Assembly Procedure
+Any error that you accidentally introduce to the board is really not a big deal, as long as you catch the error early on. This is why it is very important to verify the hardware after each step in the assembly.
 
+Test or you will regret that you didn't!
+| -------- |
 
 
 ## Step 1: Uploading Firmware and testing the FOC/PILL
@@ -56,7 +58,7 @@ Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in 
 
 <img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="600" style="float:left; margin-right:10px;">
 
-Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in Vesc Tool under the name "FOC_KING".
+Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in the Vesc Tool under the name "FOC_KING".
 
 <div>
 <img src="../images/20240120_121016.jpg" width="450" style="float:left;">
@@ -89,7 +91,7 @@ You can now temporarily attact the Power Module to the Main Module. You can bend
 
 If you apply min. +16V to the main connectors on the Main Module, the blue LED on the Power Module should light up. Still **current limit of 0.1 Amps**.
 
-## Step 3: Connect FOCPILL and Main Module together
+## Step 3A: Connect FOCPILL and Main Module together
 
 In general you can connect these modules with or without pin-headers, but there are a few terminals that should always be connected by pins. These are:
 
@@ -98,15 +100,20 @@ GND
 | +3V      |
 | +5V      |
 
-In particular, the GND terminals are very difficult to heat to sufficient temperatures, without using pins. But if we look at the pcb, these terminals are located under JST connectors, which already are "pinned".
+In particular, the GND terminals are very difficult to heat to sufficient temperatures, without using pins. But if we look at the pcb, these terminals are all conveniently located under JST connectors, which already are "pinned".
 
-[Image]
+<img src="../images/gnd.png" width="600" style="float:left;">
 
 1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAiN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
 2. Fix the modules by soldering a single pin-hole, and make sure that you use a fair amount of solder and heat, and make sure that there is virtually NO gap between the modules. The more of a gap the more difficult the whole mounting procedure will be.
 3. When the modules are fixed together with solder at a single pin-hole, you should temporarily remove the plastic part of the JST connectors, using e.g. a hobby knife or pliers.
 4. Now you can solder the exposed JST pins on the front side of the main module, before putting the plastic parts of the JST connectors back on their corresponding pins.
-5. 
+
+## Step 3B:
+If you're going to connect all terminals using pin-headers, you can jump to "Step 3C" now.
+
+
+
 
 
 If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
