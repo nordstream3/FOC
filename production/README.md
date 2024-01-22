@@ -37,40 +37,31 @@ Now, Connect the FOC/PILL via a USB-C cable to your computer. In this example I 
 
 [stlink-gui on Ubuntu Linux](https://www.youtube.com/watch?v=VhLIKFwoGjo)
 
-<img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
+<div>
+<img src="../images/20240120_120229.jpg" width="400" style="float:left; margin-right:10px;">
+<img src="../images/swd.png" width="400" style="float:left;">
+</div>
 
 There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough. The pill is going to be soldered to the bottom side of the main module, and permanent pin-headers are not convenient on this side of the board.
+
+Info: The square pad on the pill SWD header is VCC (+3.3V).
 
 In this example I use "stlink-gui" on Linux for uploading firmware. If you're on Widows or Mac use one of the other options.
 
 Flash the bootloader to address 0x08000000. Bootloader can be found in the "binaries" folder.
 
-<img src="../images/Screenshot from 2024-01-20 12-05-59.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 12-05-59.png"  width="600" style="float:left; margin-right:10px;">
 
 Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in the "binaries" folder.
 
-<img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="600" style="float:left; margin-right:10px;">
 
-After you have flashed these two binaries a led on the board will show a constant green and a red led will show a flashing red. 
+Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in Vesc Tool under the name "FOC_KING".
 
-
-
-<img src="../images/Screenshot from 2024-01-20 15-52-31.png"  width="400" style="float:left; margin-right:10px;">
-
-
-
-<img src="../images/focpill.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="https://github.com/nordstream3/FOC/assets/129880401/765e72d6-6183-4d98-8290-5aad64784e7b)"  width="200" style="float:left; margin-right:10px;">
-
-Connect the FOCPILL via a USB-C cable to your computer. No LEDs on the board will light up before you have uploaded the VESC Firmware.
-
-Upload Boot Loader and FOCKING VESC6 firmware binaries using e.g. STLINK, stm32f4 Discovery Board or an existing VESC as a programmer. Here are guides on how to do this:
-
-
-
-Bootloader and FOCKING binaries are located in the "binaries" folder.
-
-Once you have uploaded the firmware and the FOCPILL is booted, the LEDs on the board will show a constant green light and a blinking red light, and you have now successfully veryfied that the FOCPILL is working as is should - so far.
+<div>
+<img src="../images/20240120_121016.jpg" width="300" style="float:left;">
+<img src="../images/Screenshot from 2024-01-20 15-52-31.png" width="400" style="float:left;">
+</div>
 
 **REMEMBER** to remove the solder bridge between the pads again, as the assembled FOCKING will **NOT** work properly if powered by USB.
 
