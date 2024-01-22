@@ -89,15 +89,18 @@ You can now temporarily attact the Power Module to the Main Module. You can bend
 
 If you apply min. +16V to the main connectors on the Main Module, the blue LED on the Power Module should light up. Still **current limit of 0.1 Amps**.
 
-## Connect FOCPILL and Main Module together
+## Step 3: Connect FOCPILL and Main Module together
 
 In general you can connect these modules with or without pin-headers, but there are a few terminals that should always be connected by pins. These are:
-| GND      |
+
+GND
+| ------------- |
 | +3V      |
 | +5V      |
 
+In particular, the GND terminals are very difficult to heat to sufficient temperatures for any solid connection, without using pins. But if we look at the pcb, these terminals are located under JST connectors, which already are "pinned".
 
-
+Start by aligning the modules so the FOC/PILL is located on the back-side of the MAiN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
 
 
 If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
