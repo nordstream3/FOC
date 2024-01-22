@@ -91,6 +91,12 @@ If you apply min. +16V to the main connectors on the Main Module, the blue LED o
 
 ## Connect FOCPILL and Main Module together
 
+In general you can connect these modules with or without pin-headers, but there are a few terminals that should always be connected by pins. These are:
+GND
++3V
++5V
+
+
 If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
 **current limit of 0.1 Amps**
 
