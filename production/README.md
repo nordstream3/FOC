@@ -17,7 +17,7 @@ Any error that you accidentally introduce to the board is really not a big deal,
 
 
 
-## Uploading Firmware and testing the FOC/PILL
+## Step 1: Uploading Firmware and testing the FOC/PILL
 
 The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
@@ -39,8 +39,23 @@ Now, Connect the FOC/PILL via a USB-C cable to your computer. In this example I 
 
 <img src="../images/20240120_120229.jpg"  width="400" style="float:left; margin-right:10px;">
 
-There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough.
+There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough. The pill is going to be soldered to the bottom side of the main module, and permanent pin-headers are not convenient on this side of the board.
 
+In this example I use "stlink-gui" on Linux for uploading firmware. If you're on Widows or Mac use one of the other options.
+
+Flash the bootloader to address 0x08000000. Bootloader can be found in the "binaries" folder.
+
+<img src="../images/Screenshot from 2024-01-20 12-05-59.png"  width="400" style="float:left; margin-right:10px;">
+
+Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in the "binaries" folder.
+
+<img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="400" style="float:left; margin-right:10px;">
+
+After you have flashed these two binaries a led on the board will show a constant green and a red led will show a flashing red. 
+
+
+
+<img src="../images/Screenshot from 2024-01-20 15-52-31.png"  width="400" style="float:left; margin-right:10px;">
 
 
 
@@ -113,10 +128,6 @@ If this is your first time assembling a board, I advise you to connect the modul
 <img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_155628.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 12-05-25.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 12-05-59.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 15-52-31.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-51-23.png"  width="400" style="float:left; margin-right:10px;">
