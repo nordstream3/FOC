@@ -15,6 +15,8 @@ The FOC/KING /ˈfʌkɪŋ/ is an open-source motor controller board in developmen
 
 FOC is short of Field Oriented Control and KING is because it's the King. The hardware is separated in 3 sub-modules: Power, STM32F405 FOC/PILL, and the main module with FOC related components. The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
 
+The standard design includes 12 mosfets, but it will also work with just 6 fets. You choose.
+
 ## Features
 * 75V/300A continuous rating
 * 18s battery voltage rating
