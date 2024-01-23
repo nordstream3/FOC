@@ -5,7 +5,7 @@
 
 **JAN 23th 2024: NOT RELEASED. Waiting for pcb verification**
 
-Date | Manufacturer | amount | includes | shipping, tax | price
+Date | Manufacturer | amount | includes | shipping & tax | price
 | -------- | -------- | -------- | -------- | -------- | -------- |
 2024-01-17 | JLCPCB | 10 boards | All assembled excl fets and caps | YES, to EU | $241.08
 
