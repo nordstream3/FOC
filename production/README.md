@@ -114,7 +114,7 @@ In particular, the GND terminals are very difficult to heat to sufficient temper
 image | image | image | image
 
 
-## Step 3B:
+## Step 3B (no pin headers):
 If you're going to connect all terminals using pin-headers, you can jump to "Step 3C" now.
 
 The easiest way to solder the remaining terminals (those without pin-headers) is to secure the soldering iron in a vise, align the pin-hole on top of the soldering iron, holding the workpiece with one hand and apply solder with the other as shown below.
@@ -125,26 +125,31 @@ This is the best way to achieve a solid electrical connections between the pin-h
 
 Jump to "Step 4".
 
-## Step 3C:
+## Step 3C: (all pin headers)
 
-
+Align pin-headers in the remaining pin-holes and solder these on the opposite side. Then remove the plastic spacers using e.g. a knife, and solder the pins to this side of the board too. Be careful not to use too much solder, as this will make it difficult to un-solder the foc/pill, if you for any reason would like to do that later on.
 
 <div>
 <img src="../images/20240120_134931.jpg"  width="500" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
 </div>
 
+<img src="../images/20240120_135625.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144254.jpg"  width="400" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144436.jpg"  width="400" style="float:left; margin-right:10px;">
 
 
 
-If this is your first time assembling a board, I advise you to connect the modules using 2.54mm pitch pin headers.
-**current limit of 0.1 Amps**
+
+
+
 
 <img src="../images/foc_assembly.jpg"  width="400" style="float:left; margin-right:10px;">
 
 
 <img src="../images/20240120_115643.jpg"  width="400" style="float:left; margin-right:10px;">
 
+<img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
@@ -153,10 +158,6 @@ If this is your first time assembling a board, I advise you to connect the modul
 <img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_135625.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144254.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144436.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_151904.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_153355.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_154146.jpg"  width="400" style="float:left; margin-right:10px;">
