@@ -3,10 +3,7 @@
 
 ## The DIY Open Source Vesc6 and FOC capable HW
 
-**JAN 17th 2024: VERY CLOSE TO A RELEASE - EVERYTHING WORKS,BUT HAD TO MAKE MORE ROOM FOR PWR CONNECTER. WAITING FOR PCB FOR VERIFICATION OF THIS CHANGE**
-
-**JAN 3RD 2024: VERY CLOSE TO A RELEASE - JUST NEED A FINAL TEST ON UART.
-CURRENT PRICE TAG AT JLCPCB FOR 5 BOARDS WITH ALL COMPONENTS ASSEMBLED (not including FETS and Power Capacitors):
+**JAN 23th 2024: WAITING FOR PCB FOR VERIFICATION. CURRENT PRICE TAG AT JLCPCB FOR 5 BOARDS WITH ALL COMPONENTS ASSEMBLED (not including FETS and Power Capacitors):
   $134.61**
 
 The FOC/KING /ˈfʌkɪŋ/ is an open-source motor controller board in development based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running FOC at high power and voltages.
