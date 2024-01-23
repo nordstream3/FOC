@@ -68,6 +68,11 @@ Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the b
 
 **REMEMBER** to remove the solder bridge between the pads again, as the assembled FOCKING will **NOT** work properly if powered by USB.
 
+<div>
+<img src="../images/pow_pads.png" width="200" style="float:left;">
+</div>
+
+
 ## Step 2: Verify the POWER hardware
 
 Connect the Power Module to a power supply as shown on the image below. Be VERY careful not to short the connections. Set the voltage to +16V with a **current limit of 0.1 Amps**.
@@ -78,18 +83,6 @@ Connect the Power Module to a power supply as shown on the image below. Be VERY 
 </div>
 
 The module is working properly when the LED on the module shows a constant blue light.
-
-## Solder power connector pins
-
-Solder 5 power connector pins onto the Main Module.
-
-[image of soldered power connectors]
-
-You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet.
-
-[image of tmp connected modules - with blue light]
-
-If you apply min. +16V to the main connectors on the Main Module, the blue LED on the Power Module should light up. Still **current limit of 0.1 Amps**.
 
 ## Step 3A: Connect FOCPILL and Main Module together
 
@@ -121,7 +114,7 @@ The easiest way to solder the remaining terminals (those without pin-headers) is
 
 [image]
 
-This is the best way to achieve a solid electrical connections between the pin-holes of the sandwiched modules.
+This is the best way to achieve solid electrical connections between the pin-holes of the sandwiched modules.
 
 Jump to "Step 4".
 
@@ -134,7 +127,18 @@ Align pin-headers in the remaining pin-holes and solder these on the opposite si
 <img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
 </div>
 
-When the two modules are fully soldered together, you should be able to power the complete assembled board by applying +16V across the main supply terminals. Use a current limit of 0.1A.
+## Step 5: Solder power connector pins
+
+Solder 5 power connector pins onto the Main Module.
+
+[image of soldered power connectors]
+
+You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet.
+
+[image of tmp connected modules - with blue light]
+
+
+Now that all three modules are connected (power module connected by tension only), you should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
 <div>
 <img src="../images/20240120_135625.jpg"  width="300" style="float:left; margin-right:10px;">
@@ -144,7 +148,7 @@ When the two modules are fully soldered together, you should be able to power th
 
 At this stage, the board should draw around 0.05A at 16V.
 
-## Step 4:
+## Step 5:
 
 
 
