@@ -134,13 +134,17 @@ Align pin-headers in the remaining pin-holes and solder these on the opposite si
 <img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
 </div>
 
-<img src="../images/20240120_135625.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144254.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144436.jpg"  width="400" style="float:left; margin-right:10px;">
+When the two modules are fully soldered together, you should be able to power the complete assembled board by applying +16V across the main supply terminals. Use a current limit of 0.1A.
 
+<div>
+<img src="../images/20240120_135625.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144254.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144436.jpg"  width="300" style="float:left;">
+</div>
 
+At this stage, the board should draw around 0.05A at 16V.
 
-
+## Step 4:
 
 
 
