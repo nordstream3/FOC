@@ -104,14 +104,35 @@ In particular, the GND terminals are very difficult to heat to sufficient temper
 
 <img src="../images/gnd.png" width="600" style="float:left;">
 
-1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAiN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
+1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAIN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
 2. Fix the modules by soldering a single pin-hole, and make sure that you use a fair amount of solder and heat, and make sure that there is virtually NO gap between the modules. The more of a gap the more difficult the whole mounting procedure will be.
-3. When the modules are fixed together with solder at a single pin-hole, you should temporarily remove the plastic part of the JST connectors, using e.g. a hobby knife or pliers.
-4. Now you can solder the exposed JST pins on the front side of the main module, before putting the plastic parts of the JST connectors back on their corresponding pins.
+3. When the modules are fixed together with solder at a single pin-hole, you should temporarily remove the plastic socket of the JST connectors, using e.g. a hobby knife or pliers.
+4. Now you can solder the exposed JST pins on the front side of the main module. Carefully, you can re-attach the plastic sockets on their corresponding pins.
+
+1 | 2 | 3 | 4
+| --- | --- | --- | --- |
+image | image | image | image
+
 
 ## Step 3B:
 If you're going to connect all terminals using pin-headers, you can jump to "Step 3C" now.
 
+The easiest way to solder the remaining terminals (those without pin-headers) is to secure the soldering iron in a vise, align the pin-hole on top of the soldering iron, holding the workpiece with one hand and apply solder with the other as shown below.
+
+[image]
+
+This is the best way to achieve a solid electrical connections between the pin-holes of the sandwiched modules.
+
+Jump to "Step 4".
+
+## Step 3C:
+
+
+
+<div>
+<img src="../images/20240120_134931.jpg"  width="500" style="float:left; margin-right:10px;">
+<img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
+</div>
 
 
 
@@ -130,9 +151,7 @@ If this is your first time assembling a board, I advise you to connect the modul
 <img src="../images/20240120_123245.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123247.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_134931.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_135212.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135625.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
