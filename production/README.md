@@ -84,47 +84,32 @@ Connect the Power Module to a power supply as shown on the image below. Be VERY 
 
 The module is working properly when the LED on the module shows a constant blue light.
 
-## Step 3A: Connect FOCPILL and Main Module together
+## Step 3: Align and fix FOC/PILL and Main Module together
 
-In general you can connect these modules with or without pin-headers, but there are a few terminals that should always be connected by pins. These are:
+If you want in any way to be able to desolder the FOC/PILL from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that thing get messy.
+
+Those terminals that are difficult to heat to sufficient temperatures, and that we therefore want to pay special attention to are:
 
 GND
 | ------------- |
 | +3V      |
 | +5V      |
 
-In particular, the GND terminals are very difficult to heat to sufficient temperatures, without using pins. But if we look at the pcb, these terminals are all conveniently located under JST connectors, which already are "pinned".
+If we look at the pcb, these terminals are all located under JST connectors, which already are "pinned".
 
 <img src="../images/gnd.png" width="600" style="float:left;">
 
-1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAIN module. Place the associated JST connectors in their right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins.
-2. Fix the modules by soldering a single pin-hole, and make sure that you use a fair amount of solder and heat, and make sure that there is virtually NO gap between the modules. The more of a gap the more difficult the whole mounting procedure will be.
-3. When the modules are fixed together with solder at a single pin-hole, you should temporarily remove the plastic socket of the JST connectors, using e.g. a hobby knife or pliers.
-4. Now you can solder the exposed JST pins on the front side of the main module. Carefully, you can re-attach the plastic sockets on their corresponding pins.
-
-1 | 2 | 3 | 4
-| --- | --- | --- | --- |
-image | image | image | image
-
-
-## Step 3B (no pin headers):
-If you're going to connect all terminals using pin-headers, you can jump to "Step 3C" now.
-
-The easiest way to solder the remaining terminals (those without pin-headers) is to secure the soldering iron in a vise, align the pin-hole on top of the soldering iron, holding the workpiece with one hand and apply solder with the other as shown below.
-
-[image]
-
-This is the best way to achieve solid electrical connections between the pin-holes of the sandwiched modules.
-
-Jump to "Step 4".
-
-## Step 3C: (all pin headers)
-
-Align pin-headers in the remaining pin-holes and solder these on the opposite side. Then remove the plastic spacers using e.g. a knife, and solder the pins to this side of the board too. Be careful not to use too much solder, as this will make it difficult to un-solder the foc/pill, if you for any reason would like to do that later on.
+1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAIN module. Place the first JST in its right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins. We don't want solder in between the pcbs.
+2. Turn the board around and temporarily remove the plastic socket of the JST, using e.g. a hobby knife or pliers.
+3. While making sure that the modules are perfectly aligned, solder the pins on this side also.
+4. Do the same thing for the remaining JSTs.
+5. Position pin-headers in the remaining terminals, solder these, remove plastic spacers, and solder the other side as well. Be careful not to use too much solder, as this will make it difficult to de-solder the foc/pill.
+6. Carefully, you can re-attach the JST plastic sockets on their corresponding pins, and shorten the length of the (non JST) pins.
 
 <div>
-<img src="../images/20240120_134931.jpg"  width="500" style="float:left; margin-right:10px;">
-<img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
+<img src="../images/20240120_123247.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_134931.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_135212.jpg"  width="165" style="float:left;">
 </div>
 
 ## Step 4: Solder power connector pins
@@ -133,12 +118,7 @@ Solder 5 power connector pins onto the Main Module.
 
 [image of soldered power connectors]
 
-You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet.
-
-[image of tmp connected modules - with blue light]
-
-
-Now that all three modules are connected (power module connected by tension only), you should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
+You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet. You should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
 <div>
 <img src="../images/20240120_135625.jpg"  width="350" style="float:left; margin-right:10px;">
@@ -181,7 +161,7 @@ Attach a bldc motor to the three phase wires.
 
 Again, apply the same test as in "Step 6"
 
-## Step 8: Running the motor, testing
+## Step 8: Test run the motor
 
 If you were successful so far, increase the voltage to +24V and **set a current limit of 0.3A**.
 Connect to "FOC_KING" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
@@ -218,7 +198,6 @@ single_bridge_duty 2 0.04 10
 <img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_123245.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_123247.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
