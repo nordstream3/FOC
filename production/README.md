@@ -188,7 +188,7 @@ single_bridge_duty 1 0.04 10
 single_bridge_duty 2 0.04 10
 ```
 
-
+If something looks or feels odd in this procedure, maybe you accidentally bridged traces during soldering of mosfets?
 
 
 
