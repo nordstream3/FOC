@@ -191,18 +191,22 @@ Connect to "FOC_KING" in the Vesc Tool and go to the "Vesc Dev Tools" menu and t
 Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FOC/KING firmware).
 Write the command:
 
+```
 single_bridge_duty 0 0.04 10
+```
 
-(which is equivalent to: Apply 4% duty cycle to bridge no. 0 for 10 seconds)
+(which is equivalent to: Apply 4% duty cycle to phase no. 0 for 10 seconds)
 
 If you try to turn the motor by hand now, you should feel some mechanical resistance. Note down the draw of current during this 10 second period.
 
 If you run the same command for the two other phases, the draw of current should be around the same value. Also the felt mechanical resistance should be comparable. The commands for the two other phases are:
 
+```
 single_bridge_duty 1 0.04 10
-
+```
+```
 single_bridge_duty 2 0.04 10
-
+```
 
 
 
