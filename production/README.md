@@ -150,12 +150,25 @@ At this stage, the board should draw around 0.05A at 16V.
 
 ## Step 5: Apply solder to exposed copper planes
 
-Apply around 0.3-0.5 of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module.
+Apply around 0.3-0.5 of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module. This, because there will be around 0.5mm of gap between mosfets and pcb.
 
 <div>
 <img src="../images/20240120_153355.jpg"  width="300" style="float:left; margin-right:10px;">
-<img src="../images/20240120_151904.jpg"  width="300" style="float:left;">
+<img src="../images/20240120_151904.jpg"  width="235" style="float:left;">
 </div>
+
+## Step 6: Solder first 6 mosfets
+
+Bend the legs of these 6 mosfets in such a way that there is a spacing of around 0.5mm between mosfets and pcb. In other words, we want the screw-holes for attaching mosfets to the aluminum heat sink to be not too much off. Also, the USB connector should not be in the way of an aluminum heat-sink.
+
+[image of mosfet-2-pcb gap]
+
+<img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
+
+You choose if you want to attach the remaining 6 mosfets. This obviously depends on the wattage spec you want of the board.
+
+## Step 7: Time for TESTING
+
 
 
 
