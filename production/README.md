@@ -167,16 +167,47 @@ Bend the legs of these 6 mosfets in such a way that there is a spacing of around
 
 You choose if you want to attach the remaining 6 mosfets. This obviously depends on the wattage spec you want of the board.
 
-## Step 7: Time for TESTING
+Power up the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
+
+<img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
+
+The board should obviously draw less than 0.1A - probably around 0.05A.
+
+## Step 7: Solder the wires for main supply positive and negative. Also solder wires for all three phases
+
+[Image]
+
+Attach a bldc motor to the three phase wires.
+
+Again, apply the same test as in "Step 6"
+
+## Step 8: Running the motor, testing
+
+If you were successful so far, increase the voltage to +24V and **set a current limit of 0.3A**.
+Connect to "FOC_KING" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
+
+<img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="700" style="float:left; margin-right:10px;">
+
+Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FOC/KING firmware).
+Write the command:
+
+single_bridge_duty 0 0.04 10
+
+(which is equivalent to: Apply 4% duty cycle to bridge no. 0 for 10 seconds)
+
+If you try to turn the motor by hand now, you should feel some mechanical resistance. Note down the draw of current during this 10 second period.
+
+If you run the same command for the two other phases, the draw of current should be around the same value. Also the felt mechanical resistance should be comparable. The commands for the two other phases are:
+
+single_bridge_duty 1 0.04 10
+
+single_bridge_duty 2 0.04 10
 
 
 
 
 
-<img src="../images/foc_assembly.jpg"  width="400" style="float:left; margin-right:10px;">
 
-
-<img src="../images/20240120_115643.jpg"  width="400" style="float:left; margin-right:10px;">
 
 <img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
@@ -196,7 +227,6 @@ You choose if you want to attach the remaining 6 mosfets. This obviously depends
 <img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-51-23.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-52-16.png"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-52-59.png"  width="400" style="float:left; margin-right:10px;">
