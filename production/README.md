@@ -127,7 +127,7 @@ Align pin-headers in the remaining pin-holes and solder these on the opposite si
 <img src="../images/20240120_135212.jpg"  width="280" style="float:left;">
 </div>
 
-## Step 5: Solder power connector pins
+## Step 4: Solder power connector pins
 
 Solder 5 power connector pins onto the Main Module.
 
@@ -141,14 +141,22 @@ You can now temporarily attact the Power Module to the Main Module. You can bend
 Now that all three modules are connected (power module connected by tension only), you should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
 <div>
-<img src="../images/20240120_135625.jpg"  width="300" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144254.jpg"  width="300" style="float:left; margin-right:10px;">
-<img src="../images/20240120_144436.jpg"  width="300" style="float:left;">
+<img src="../images/20240120_135625.jpg"  width="350" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144254.jpg"  width="315" style="float:left; margin-right:10px;">
+<img src="../images/20240120_144436.jpg"  width="245" style="float:left;">
 </div>
 
 At this stage, the board should draw around 0.05A at 16V.
 
-## Step 5:
+## Step 5: Apply solder to exposed copper planes
+
+Apply around 0.3-0.5 of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module.
+
+<div>
+<img src="../images/20240120_153355.jpg"  width="300" style="float:left; margin-right:10px;">
+<img src="../images/20240120_151904.jpg"  width="300" style="float:left;">
+</div>
+
 
 
 
@@ -166,7 +174,6 @@ At this stage, the board should draw around 0.05A at 16V.
 <img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_151904.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_153355.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_154146.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
