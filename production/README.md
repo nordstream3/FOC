@@ -8,7 +8,7 @@ The board is produced by the manufacturer as a single pcb. The 3 modules are con
 <img src="../images/20240120_115154.jpg" width="300" style="float:left;">
 </div>
 
-Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FOCPILL and POWER modules in particular, as the traces here are close to the edges.
+Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FREE/PILL and POWER modules in particular, as the traces here are close to the edges.
 
 When the modules are separated you should straighten the edges with sandpaper or a file.
 
@@ -19,9 +19,9 @@ Test or you will regret that you didn't!
 | -------- |
 
 
-## Step 1: Uploading Firmware and testing the FOC/PILL
+## Step 1: Uploading Firmware and testing FREE/PILL
 
-The FOCPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
+FREEPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
 <div>
 <img src="../images/20240120_115645.jpg" width="300" style="float:left; margin-right:10px;">
@@ -29,7 +29,7 @@ The FOCPILL can be powered from USB +5V by temporarily bridging the two pads nex
 <img src="../images/20240120_121407.jpg" width="300" style="float:left;">
 </div>
 
-Now, Connect the FOC/PILL via a USB-C cable to your computer. In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
+Now, Connect the FreePill via a USB-C cable to your computer. In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
 
 [Existing VESC hardware](https://www.youtube.com/watch?v=PFFiVxFHDM4&t=312s)
 
@@ -58,7 +58,7 @@ Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in 
 
 <img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="600" style="float:left; margin-right:10px;">
 
-Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in the Vesc Tool under the name "FOC_KING".
+Once you have flashed the firmware and the FreePill is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in the Vesc Tool under the name "FREE_DRIVE".
 
 <div>
 <img src="../images/20240120_121016.jpg" width="450" style="float:left;">
@@ -66,7 +66,7 @@ Once you have flashed the firmware and the FOC/PILL is booted, the LEDs on the b
 </div>
 
 
-**REMEMBER** to remove the solder bridge between the pads again, as the assembled FOCKING will **NOT** work properly if powered by USB.
+**REMEMBER** to remove the solder bridge between the pads again, as the assembled FreeDrive will **NOT** work properly if powered by USB.
 
 <div>
 <img src="../images/pow_pads.png" width="200" style="float:left;">
@@ -84,9 +84,9 @@ Connect the Power Module to a power supply as shown on the image below. Be VERY 
 
 The module is working properly when the LED on the module shows a constant blue light.
 
-## Step 3: Align and fix FOC/PILL and Main Module together
+## Step 3: Align and fix FreePil and Main Module together
 
-If you want in any way to be able to desolder the FOC/PILL from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that thing get messy.
+If you want in any way to be able to desolder the FreePill from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that thing get messy.
 
 Those terminals that are difficult to heat to sufficient temperatures, and that we therefore want to pay special attention to are:
 
@@ -99,11 +99,11 @@ If we look at the pcb, these terminals are all located under JST connectors, whi
 
 <img src="../images/gnd.png" width="600" style="float:left;">
 
-1. Start by aligning the modules so the FOC/PILL is located on the back-side of the MAIN module. Place the first JST in its right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins. We don't want solder in between the pcbs.
+1. Start by aligning the modules so the FreePill is located on the back-side of the MAIN module. Place the first JST in its right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins. We don't want solder in between the pcbs.
 2. Turn the board around and temporarily remove the plastic socket of the JST, using e.g. a hobby knife or pliers.
 3. While making sure that the modules are perfectly aligned, solder the pins on this side also.
 4. Do the same thing for the remaining JSTs.
-5. Position pin-headers in the remaining terminals, solder these, remove plastic spacers, and solder the other side as well. Be careful not to use too much solder, as this will make it difficult to de-solder the foc/pill.
+5. Position pin-headers in the remaining terminals, solder these, remove plastic spacers, and solder the other side as well. Be careful not to use too much solder, as this will make it difficult to de-solder the pill.
 6. Carefully, you can re-attach the JST plastic sockets on their corresponding pins, and shorten the length of the (non JST) pins.
 
 <div>
@@ -164,11 +164,11 @@ Again, apply the same test as in "Step 6"
 ## Step 8: Test run the motor
 
 If you were successful so far, increase the voltage to +24V and **set a current limit of 0.3A**.
-Connect to "FOC_KING" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
+Connect to "FREE_DRIVE" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
 
 <img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="700" style="float:left; margin-right:10px;">
 
-Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FOC/KING firmware).
+Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FreeDrive firmware).
 Write the command:
 
 ```
