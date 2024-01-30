@@ -190,6 +190,29 @@ single_bridge_duty 2 0.04 10
 
 If something looks or feels odd in this procedure, maybe you accidentally bridged traces during soldering of mosfets?
 
+If you open up the "Sampled Data" menu under "Data Analysis" and click on the "Sample Now" button, you should see something like this:
+
+<img src="../images/Screenshot from 2024-01-20 16-51-23.png"  width="600" style="float:left; margin-right:10px;">
+
+All phase currents should be centered around zero.
+
+If you lock a single phase for e.g. 20 seconds and do a current measurement during this period, you should see that the current of phase 1 stands out from phase 2 and 3
+```
+single_bridge_duty 0 0.04 20
+```
+<img src="../images/Screenshot from 2024-01-20 16-52-16.png"  width="600" style="float:left; margin-right:10px;">
+
+Phase 2:
+```
+single_bridge_duty 1 0.04 20
+```
+<img src="../images/Screenshot from 2024-01-20 16-52-59.png"  width="600" style="float:left; margin-right:10px;">
+
+Phase 3:
+```
+single_bridge_duty 2 0.04 20
+```
+<img src="../images/Screenshot from 2024-01-20 16-53-25.png"  width="600" style="float:left; margin-right:10px;">
 
 
 
@@ -210,10 +233,6 @@ If something looks or feels odd in this procedure, maybe you accidentally bridge
 <img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
 <img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-51-23.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-52-16.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-52-59.png"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-53-25.png"  width="400" style="float:left; margin-right:10px;">
 
 
 
