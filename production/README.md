@@ -214,6 +214,7 @@ single_bridge_duty 2 0.04 20
 ```
 <img src="../images/Screenshot from 2024-01-20 16-53-25.png"  width="600" style="float:left; margin-right:10px;">
 
+## Step 9: Finish assembly by adding large capacitors or more fets
 
 
 <img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
