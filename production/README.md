@@ -93,18 +93,19 @@ Those terminals that are difficult to heat to sufficient temperatures, and that 
 GND | +3V
 | ------------- | ------------- |
 
-If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. It will work, but more about this later.
+If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. Don't do this yet, and don't worry, it will work, but more about this later.
 
 <img src="../images/gnd.png" width="600" style="float:left;">
 
-Start by following this procedure:
+Right now, follow this procedure:
 
-1. Start by aligning the modules so the FreePill is located on the back-side of the MAIN module. Place the first JST in its right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins. We don't want solder in between the pcbs.
-2. Turn the board around and temporarily remove the plastic socket of the JST, using e.g. a hobby knife or pliers.
-3. While making sure that the modules are perfectly aligned, solder the pins on this side also.
-4. Do the same thing for the remaining JSTs.
-5. Position pin-headers in the remaining terminals, solder these, remove plastic spacers, and solder the other side as well. Be careful not to use too much solder, as this will make it difficult to de-solder the pill.
-6. Carefully, you can re-attach the JST plastic sockets on their corresponding pins, and shorten the length of the (non JST) pins.
+1. Solder two 20-pin headers to the FreePill.
+2. Mount the FreePill on the back side of the 'Main Module'.
+3. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. If too much solder is applied, you can scrape it off gently using a hobby knife.
+4. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
+5. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
+
+[these are the wrong images]
 
 <div>
 <img src="../images/20240120_123247.jpg"  width="300" style="float:left; margin-right:10px;">
@@ -118,7 +119,7 @@ Solder 5 power connector pins onto the Main Module.
 
 [image of soldered power connectors]
 
-You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet. You should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
+You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet (until you have attached heat sinks to mosfets). You should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
 <div>
 <img src="../images/20240120_135625.jpg"  width="350" style="float:left; margin-right:10px;">
