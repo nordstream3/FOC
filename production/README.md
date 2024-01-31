@@ -2,6 +2,10 @@
 
 [This is still work in progress, and if you read this, some images and some descriptions might not be correct]
 
+For this assembly you will need:
+
+[Image of all components needed]
+
 The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
 <div>
