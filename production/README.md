@@ -86,18 +86,18 @@ The module is working properly when the LED on the module shows a constant blue 
 
 ## Step 3: Align and fix FreePil and Main Module together
 
-If you want in any way to be able to desolder the FreePill from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that thing get messy.
+If you want in any way to be able to desolder the FreePill from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that things get messy.
 
-Those terminals that are difficult to heat to sufficient temperatures, and that we therefore want to pay special attention to are:
+Those terminals that are difficult to heat to sufficient temperatures, and that you would therefore want to pay special attention to are:
 
-GND
-| ------------- |
-| +3V      |
-| +5V      |
+GND | +3V
+| ------------- | ------------- |
 
-If we look at the pcb, these terminals are all located under JST connectors, which already are "pinned".
+If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. It will work, but more about this later.
 
 <img src="../images/gnd.png" width="600" style="float:left;">
+
+Start by following this procedure:
 
 1. Start by aligning the modules so the FreePill is located on the back-side of the MAIN module. Place the first JST in its right positions on the front side of the main module, and solder the connector pins on the back side. Be careful not to use more than just enough solder for these pins. We don't want solder in between the pcbs.
 2. Turn the board around and temporarily remove the plastic socket of the JST, using e.g. a hobby knife or pliers.
