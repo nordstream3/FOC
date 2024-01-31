@@ -134,7 +134,7 @@ At this stage, the board should draw around 0.05A at 16V.
 
 ## Step 5: Apply solder to exposed copper planes
 
-Apply around 0.3-0.5 of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module. This, because there will be around 0.5mm of gap between mosfets and pcb.
+Apply around 0.3-0.5 mm of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module. This, because there will be around 0.5mm of gap between mosfets and pcb.
 
 <div>
 <img src="../images/20240120_153355.jpg"  width="300" style="float:left; margin-right:10px;">
