@@ -93,7 +93,8 @@ Those terminals that are difficult to heat to sufficient temperatures, and that 
 GND | +3V
 | ------------- | ------------- |
 
-If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. Don't do this yet, and don't worry, it will work, but more about this later.
+> If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. Don't do this yet, and don't worry, it will work, but more about this later.
+> | ------------- |
 
 <img src="../images/gnd.png" width="600" style="float:left;">
 
