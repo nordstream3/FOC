@@ -110,27 +110,31 @@ Connect the Power Module to a power supply as shown on the image below. Be VERY 
 
 The module is working properly when the LED on the module shows a constant blue light.
 
-## Step 3: Align and fix FreePil and Main Module together
+## Step 3: Solder FreePill and Main Module together
 
-If you want in any way to be able to desolder the FreePill from the Main Module at some point in the future, you should use pin-headers for all terminals. In general, pin-headers are the only way to avoid that things get messy.
+Some JST connectors will overlap with the Pill at the terminals marked with red:
 
-Those terminals that are difficult to heat to sufficient temperatures, and that you would therefore want to pay special attention to are:
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/99fdda21-d9fe-4e09-8cc0-22bf581b20a4" width="400" style="float:left; margin-right:10px;">
+</div>
 
-GND | +3V
-| ------------- | ------------- |
+This is a challenge, because we are going to solder the FreePill and Main Module together using standard pin headers. Because terminals are shared with JST connectors, we remove the pins of the JST sockets where there is overlap, and then the pin-header pins with replace these. However, to end up with a proper JST-pin length, we need to pull out the pin-header pins around 1.5 mm at these spots.
 
-> If we look at the pcb you will notice that some of the JST connectors are in fact located directly on top of pins that go through BOTH sandwiched boards. You might ask, how am I going to mount a JST connector socket on top of a pin header? Well, you can't, and that is why we will have to do a trick here, which is to pull out the pins of these particular JST connector sockets and then mount the remaining "plastic" socket on top of the pins of pin headers. Don't do this yet, and don't worry, it will work, but more about this later.
-> | ------------- |
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/a095acde-4886-4657-abde-4e53204bb996" width="400" style="float:left;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/a5687b8f-4f25-495b-a070-af99cf916f18" width="400" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/af5f007d-3e23-405a-9804-2ed85d561858" width="400" style="float:left;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/69c51785-c3c9-4fee-a5ae-2bdf6b18780a" width="400" style="float:left; margin-right:10px;">
+</div>
 
-<img src="../images/gnd.png" width="600" style="float:left;">
+Follow this procedure (in this order):
 
-Right now, follow this procedure:
-
-1. Solder two 20-pin headers to the FreePill.
-2. Mount the FreePill on the back side of the 'Main Module'.
-3. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. If too much solder is applied, you can scrape it off gently using a hobby knife.
-4. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
-5. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
+1. With a set of pliers, on the standard pin headers, pull out the "shared" pins around 1.5 mm with reference to the black plastic spacer.
+2. Solder pin headers to the FreePill.
+3. Mount the FreePill on the back side of the 'Main Module'.
+4. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. The GND and +3V terminals will need a lot of heat. If too much solder is applied, you can scrape it off gently using a hobby knife.
+5. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
+6. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
 
 [these are the wrong images]
 
