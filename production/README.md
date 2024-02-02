@@ -2,9 +2,18 @@
 
 [This is still work in progress, and if you read this, some images and some descriptions might not be correct]
 
-For this assembly you will need:
+For a complete assembly of Free Drive you will need:
 
-[Image of all components needed]
+![image](https://github.com/nordstream3/FOC/assets/129880401/f58cc206-b7ed-49ce-b436-6f655d200584)
+
+Pcs | Part | LCSC order no.
+| ----- | ----- | ----- |
+1 | Pre-assembled pcb
+46 | Standard pin header pins | C7494870
+6 or 12 | Mosfets of type CRST030N10N | C841369
+6 | 330uF Aluminum Electrolytic Capacitors D10xL25mm | C443085
+3 | Female banana bullet connectors | C99865
+1 | XT90H-M Male battery connector | C3040683
 
 The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
