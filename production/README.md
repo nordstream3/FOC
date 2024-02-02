@@ -136,24 +136,20 @@ Follow this procedure (in this order):
 5. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
 6. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
 
-[these are the wrong images]
-
-<div>
-<img src="../images/20240120_123247.jpg"  width="300" style="float:left; margin-right:10px;">
-<img src="../images/20240120_134931.jpg"  width="300" style="float:left; margin-right:10px;">
-<img src="../images/20240120_135212.jpg"  width="165" style="float:left;">
-</div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/1b25a1ec-3314-4709-92e2-f6bb2645d137" width="600" style="float:left;">
 
 ## Step 4: Solder power connector pins
 
 Solder 5 power connector pins onto the Main Module.
 
-[image of soldered power connectors]
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/bc49a59b-0ad5-479a-9270-0a4a1bb37860"  width="350" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/5d9624e4-19ce-48cc-8c8d-76164a3cf3bd"  width="350" style="float:left;">
+</div>
 
 You can now temporarily attact the Power Module to the Main Module. You can bend the pins slightly in order to secure a good connection. Do not solder the two modules together yet (until you have attached heat sinks to mosfets). You should be able to power the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
 <div>
-<img src="../images/20240120_135625.jpg"  width="350" style="float:left; margin-right:10px;">
 <img src="../images/20240120_144254.jpg"  width="315" style="float:left; margin-right:10px;">
 <img src="../images/20240120_144436.jpg"  width="245" style="float:left;">
 </div>
@@ -171,9 +167,7 @@ Apply around 0.3-0.5 mm of solder to the large exposed copper planes of both sid
 
 ## Step 6: Solder first 6 mosfets
 
-Bend the legs of these 6 mosfets in such a way that there is a spacing of around 0.5mm between mosfets and pcb. In other words, we want the screw-holes for attaching mosfets to the aluminum heat sink to be not too much off. Also, the USB connector should not be in the way of an aluminum heat-sink.
-
-[image of mosfet-2-pcb gap]
+Bend the legs of these 6 mosfets in such a way that there is a spacing of around 0.5mm between mosfets and pcb. This is make sure that there is room enough for the solder we already attached to the big copper planes. The screw holes for attachment of heat sink doesn't need to align up perfectly, but should not be too much off.
 
 <img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
 
