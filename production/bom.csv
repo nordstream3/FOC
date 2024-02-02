@@ -9,7 +9,7 @@ Comment,Designator,Footprint,LCSC
 "22u","C30,C31","Capacitor_SMD:C_0805_2012Metric","C45783"
 "1n","C35,C46,C58","Capacitor_SMD:C_0603_1608Metric","C1588"
 "100n","C4,C5,C6,C8,C34,C45,C57,C69,C70,C73,C74,C76,C79,C81","Capacitor_SMD:C_0603_1608Metric","C14663"
-"330uF","C40,C41,C52,C53,C67,C68","C443095","C443095"
+"330uF","C40,C41,C52,C53,C67,C68","C443095","C443085"
 "10u","C7,C16,C23,C32","Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I","C7171"
 "1u","C75","Capacitor_SMD:C_0603_1608Metric","C15849"
 "12p","C78,C80","Capacitor_SMD:C_0603_1608Metric","C38523"
