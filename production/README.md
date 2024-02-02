@@ -15,10 +15,10 @@ Pcs | Part | LCSC order no.
 3 | Female banana bullet connectors | C99865
 1 | XT90H-M Male battery connector | C3040683
 1 | JST	1x7P XH 2.5mm | C144398
-1 | JST	1x4P XH 2.5mm | ?
+1 | JST	1x4P XH 2.5mm | C144395
 1 | JST	1x3P XH 2.5mm | C158003
 1 | JST	1x2P XH 2.5mm | C158012
-1 | JST 1x6P 6 pin JST (p=200) | ?
+1 | JST 1x6P 6 pin JST (p=200) | C7465571
 - | Cables
 - | Aluminum for sinking heat
 - | 3D printed enclosure (production folder)
