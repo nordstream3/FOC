@@ -19,9 +19,12 @@ Pcs | Part | LCSC order no.
 1 | JST	1x3P XH 2.5mm | C158003
 1 | JST	1x2P XH 2.5mm | C158012
 1 | JST 1x6P 6 pin JST (p=200) | C7465571
-- | Cables
-- | Aluminum for sinking heat
-- | 3D printed enclosure (production folder)
+6 or 12 | Mica Insulation Sheet | Aliexpress
+6 or 12 | White Insulation Washer TO-220 | Aliexpress
+6 or 12 | M3 Stainless Steel Allen Bolts and Screws | Aliexpress
+x | Cables
+x | Aluminum for sinking heat
+x | 3D printed enclosure (production folder)
 
 The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
