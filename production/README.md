@@ -14,6 +14,14 @@ Pcs | Part | LCSC order no.
 6 | 330uF Aluminum Electrolytic Capacitors D10xL25mm | C443085
 3 | Female banana bullet connectors | C99865
 1 | XT90H-M Male battery connector | C3040683
+1 | JST	1x7P XH 2.5mm | C144398
+1 | JST	1x4P XH 2.5mm | ?
+1 | JST	1x3P XH 2.5mm | C158003
+1 | JST	1x2P XH 2.5mm | C158012
+1 | JST 1x6P 6 pin JST (p=200) | ?
+- | Cables
+- | Aluminum for sinking heat
+- | 3D printed enclosure (production folder)
 
 The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
