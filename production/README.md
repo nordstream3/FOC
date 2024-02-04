@@ -1,15 +1,10 @@
 # Assembly Guide
 
-[This is still work in progress, and if you read this, some images and some descriptions might not be correct]
-
 A fully assembled FreeDrive will look like this:
 
-<div>
-<img src="https://github.com/nordstream3/FOC/assets/129880401/da2cea22-1f1f-4b8b-ab5b-a13add054a24" width="300" style="float:left; margin-right:10px;">
-<img src="https://github.com/nordstream3/FOC/assets/129880401/127139e2-60cc-441b-a3e4-03f4d176d097" width="300" style="float:left;">
-</div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/da2cea22-1f1f-4b8b-ab5b-a13add054a24" width="400" style="float:left; margin-right:10px;">
 
-> The 3d printed enclosure you can find in the /production folder as an obj-file (enclosure.obj). You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
+> The 3d printed enclosure you can find in the /production folder as obj files. You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
 
 For a complete assembly of Free Drive you will need:
 
@@ -169,20 +164,30 @@ At this stage, the board should draw around 0.05A at 16V.
 
 ## Step 5: Apply solder to exposed copper planes
 
-Apply around 0.3-0.5 mm of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets). Also apply around the same amount to the small temperature sensor plane on the bottom of the Main Module. This, because there will be around 0.5mm of gap between mosfets and pcb.
+Apply around 0.3-0.5 mm of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets).
+
+You can adjust the "height" of the temperature sensor pad by applying a thin layer of solder to it. This is to encure that there is physical contact with the mosfet for temperature reading.
 
 <div>
 <img src="../images/20240120_153355.jpg"  width="300" style="float:left; margin-right:10px;">
 <img src="../images/20240120_151904.jpg"  width="235" style="float:left;">
 </div>
 
+> Putting a layer of solder on the planes is done for thermal management reasons rather than for enhancing electrical conductivity.
+> Solder has better thermal conductivity than the bare copper, so adding a thin layer of solder can enhance the thermal performance further. This can help in better heat dissipation from the switching mosfets, which generate significant heat during operation.
+
+
 ## Step 6: Solder first 6 mosfets
 
-Bend the legs of these 6 mosfets in such a way that there is a spacing of around 0.5mm between mosfets and pcb. This is make sure that there is room enough for the solder we already attached to the big copper planes. The screw holes for attachment of heat sink doesn't need to align up perfectly, but should not be too much off.
+<img src="https://github.com/nordstream3/FOC/assets/129880401/9fe8507a-689a-4e36-8991-787deb67086a" width="400" style="float:left; margin-right:10px;">
+
+Bending the caps at the right spot is an advantage, if you want to use the screw holes for mounting the heat sink.
+
+> The screw holes for attachment of heat sink doesn't need to align up perfectly, but should not be too much off.
 
 <img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
 
-You choose if you want to attach the remaining 6 mosfets. This obviously depends on the wattage spec you want of the board.
+> You choose if you want to attach the remaining 6 mosfets. This obviously depends on the wattage spec you want of the board.
 
 Power up the complete board by applying +16V across the main supply terminals. **Use a current limit of 0.1A**.
 
@@ -192,7 +197,7 @@ The board should obviously draw less than 0.1A - probably around 0.05A.
 
 ## Step 7: Solder the wires for main supply positive and negative. Also solder wires for all three phases
 
-[Image]
+<img src="https://github.com/nordstream3/FOC/assets/129880401/127139e2-60cc-441b-a3e4-03f4d176d097"  width="400" style="float:left; margin-right:10px;">
 
 Attach a bldc motor to the three phase wires.
 
@@ -253,109 +258,13 @@ single_bridge_duty 2 0.04 20
 
 ## Step 9: Finish assembly by adding large capacitors or more fets
 
+For better thermal management, apply a layer of solder to the top-side exposed copper planes.
 
-<img src="../images/20240120_144227.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_121015.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_121016.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_123123.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_123245.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_134929.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_134949.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_135616.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_153355.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154146.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154244.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154516.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154718.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154834.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_154948.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/20240120_165030.jpg"  width="400" style="float:left; margin-right:10px;">
-<img src="../images/Screenshot from 2024-01-20 16-48-07.png"  width="400" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/1373153e-eb97-4cde-87a0-2f29e74d1ab2" width="400" style="float:left; margin-right:10px;">
+
+> Don't use the amount of solder applied in this image as a reference. This is too much solder!
 
 
+When mounting and soldering the 330uF capacitors, remember that the three small pads are positive V_in, and the large exposed copper plane is negative (GND).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Markdown syntax guide
-
-## Headers
-
-# This is a Heading h1
-## This is a Heading h2
-###### This is a Heading h6
-
-## Emphasis
-
-*This text will be italic*  
-_This will also be italic_
-
-**This text will be bold**  
-__This will also be bold__
-
-_You **can** combine them_
-
-## Lists
-
-### Unordered
-
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-
-### Ordered
-
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Item 3a
-    2. Item 3b
-
-## Images
-
-![This is an alt text.](/image/sample.webp "This is a sample image.")
-
-## Links
-
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
-
-## Blockquotes
-
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-## Tables
-
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
-
-## Blocks of code
-
-```
-let message = 'Hello world';
-alert(message);
-```
-
-## Inline code
-
-This web site is using `markedjs/marked`.
+<img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="400" style="float:left; margin-right:10px;">
