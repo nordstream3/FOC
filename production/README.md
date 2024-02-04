@@ -2,9 +2,18 @@
 
 [This is still work in progress, and if you read this, some images and some descriptions might not be correct]
 
+A fully assembled FreeDrive will look like this:
+
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/da2cea22-1f1f-4b8b-ab5b-a13add054a24" width="300" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/127139e2-60cc-441b-a3e4-03f4d176d097" width="300" style="float:left;">
+</div>
+
+> The 3d printed enclosure you can find in the /production folder as an obj-file (enclosure.obj). You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
+
 For a complete assembly of Free Drive you will need:
 
-![image](https://github.com/nordstream3/FOC/assets/129880401/f58cc206-b7ed-49ce-b436-6f655d200584)
+<img src="https://github.com/nordstream3/FOC/assets/129880401/f58cc206-b7ed-49ce-b436-6f655d200584" width="600" style="float:left; margin-right:10px;">
 
 Pcs | Part | LCSC order no.
 | ----- | ----- | ----- |
@@ -26,7 +35,9 @@ x | Cables
 x | Aluminum for sinking heat
 x | 3D printed enclosure (production folder)
 
-The board is produced by the manufacturer as a single pcb. The 3 modules are connected by taps, and you will need to separate the modules using a manual saw. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
+> The board is produced by the manufacturer as a single pcb. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
+
+The 3 modules are connected by taps, and you separate these using a suitable manual saw. Be careful not to damage the traces on the FREE/PILL and POWER modules in particular, as the traces here are close to the edges.
 
 <div>
 <img src="../images/20240120_114045.jpg" width="300" style="float:left; margin-right:10px;">
@@ -34,12 +45,10 @@ The board is produced by the manufacturer as a single pcb. The 3 modules are con
 <img src="../images/20240120_115154.jpg" width="300" style="float:left;">
 </div>
 
-Use a suitable manual hand saw for separating the 3 modules. Be careful not to damage the traces on the FREE/PILL and POWER modules in particular, as the traces here are close to the edges.
-
-When the modules are separated you should straighten the edges with sandpaper or a file.
+You should straighten the edges of the separated modules with sandpaper or a file.
 
 ## How to avoid creating solder bridges and other errors by testing throughout the Assembly Procedure
-Any error that you accidentally introduce to the board is really not a big deal, as long as you catch the error early on. This is why it is very important to verify the hardware after each step in the assembly.
+> Any error that you accidentally introduce to the board is really not a big deal, as long as you catch the error early on. This is why it is very important to verify the hardware after each step in the assembly.
 
 Test or you will regret that you didn't!
 | -------- |
@@ -55,7 +64,8 @@ FREEPILL can be powered from USB +5V by temporarily bridging the two pads next t
 <img src="../images/20240120_121407.jpg" width="300" style="float:left;">
 </div>
 
-Now, Connect the FreePill via a USB-C cable to your computer. In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
+Now, Connect the FreePill via a USB-C cable to your computer.
+In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
 
 [Existing VESC hardware](https://www.youtube.com/watch?v=PFFiVxFHDM4&t=312s)
 
@@ -70,11 +80,10 @@ Now, Connect the FreePill via a USB-C cable to your computer. In this example I 
 <img src="../images/swd.png" width="400" style="float:left;">
 </div>
 
-There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough. The pill is going to be soldered to the bottom side of the main module, and permanent pin-headers are not convenient on this side of the board.
-
-Info: The square pad on the pill SWD header is VCC (+3.3V).
-
-In this example I use "stlink-gui" on Linux for uploading firmware. If you're on Widows or Mac use one of the other options.
+> There is no specific need for soldering pin-headers to the SWD terminals. Usually you only need a connection for a few seconds, and just applying a bit of tension to the terminals during the upload is enough. The pill is going to be soldered to the bottom side of the main module, and permanent pin-headers are not convenient on this side of the board.
+>> The square pad on the pill SWD header is VCC (+3.3V).
+>> 
+>> In this example I use "stlink-gui" on Linux for uploading firmware. If you're on Widows or Mac use one of the other options.
 
 Flash the bootloader to address 0x08000000. Bootloader can be found in the "binaries" folder.
 
@@ -92,8 +101,8 @@ Once you have flashed the firmware and the FreePill is booted, the LEDs on the b
 </div>
 
 
-**REMEMBER** to remove the solder bridge between the pads again, as the assembled FreeDrive will **NOT** work properly if powered by USB.
-
+**REMEMBER** to remove the solder bridge again. The assembled FreeDrive will **NOT** work properly if powered by USB.
+| ------- |
 <div>
 <img src="../images/pow_pads.png" width="200" style="float:left;">
 </div>
@@ -118,7 +127,9 @@ Some JST connectors will overlap with the Pill at the terminals marked with red:
 <img src="https://github.com/nordstream3/FOC/assets/129880401/99fdda21-d9fe-4e09-8cc0-22bf581b20a4" width="400" style="float:left; margin-right:10px;">
 </div>
 
-This is a challenge, because we are going to solder the FreePill and Main Module together using standard pin headers. Because terminals are shared with JST connectors, we remove the pins of the JST sockets where there is overlap, and then the pin-header pins with replace these. However, to end up with a proper JST-pin length, we need to pull out the pin-header pins around 1.5 mm at these spots.
+This is a challenge, because we are going to solder the FreePill and Main Module together using standard pin headers. Because terminals are shared with JST connectors, we remove the pins of the JST sockets where there is overlap, and then the pin-header pins with replace these.
+
+To end up with a proper JST-pin length, we need to pull out the pin-header pins around 1.5 mm at these spots.
 
 <div>
 <img src="https://github.com/nordstream3/FOC/assets/129880401/a095acde-4886-4657-abde-4e53204bb996" width="400" style="float:left;">
@@ -127,7 +138,7 @@ This is a challenge, because we are going to solder the FreePill and Main Module
 <img src="https://github.com/nordstream3/FOC/assets/129880401/69c51785-c3c9-4fee-a5ae-2bdf6b18780a" width="400" style="float:left; margin-right:10px;">
 </div>
 
-Follow this procedure (in this order):
+Follow this procedure in this order:
 
 1. With a set of pliers, on the standard pin headers, pull out the "shared" pins around 1.5 mm with reference to the black plastic spacer.
 2. Solder pin headers to the FreePill.
