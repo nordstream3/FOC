@@ -3,7 +3,8 @@
 
 ## The DIY Open Source Vesc6 and FOC capable HW
 
-**JAN 23th 2024: NOT RELEASED. Waiting for pcb verification**
+![image](https://github.com/nordstream3/FOC/assets/129880401/e7b7ab3b-6d2f-4be4-a6b0-15b167d2bb0e)
+
 
 Date | Manufacturer | amount | includes | shipping & tax | price
 | -------- | -------- | -------- | -------- | -------- | -------- |
