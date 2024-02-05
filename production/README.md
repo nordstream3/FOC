@@ -2,7 +2,10 @@
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/9e6a898e-c8aa-4e33-9f68-3b07cfdb93b5" width="600" style="float:left; margin-right:10px;">
 
-No, this is what we want to avoid, because the fully assembled should end up looking like this:
+Wauw, it looks cool, but unfortunately something has gone wrong in this assembly.
+
+
+What we want to build here will look like this:
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/da2cea22-1f1f-4b8b-ab5b-a13add054a24" width="400" style="float:left; margin-right:10px;">
 
