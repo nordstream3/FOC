@@ -220,6 +220,8 @@ single_bridge_duty 0 0.04 10
 
 (which is equivalent to: Apply 4% duty cycle to phase no. 1 (index zero) for 10 seconds)
 
+> If the drive completely shuts down now, or starts blinking. Did you remember to turn up the current to around 0.3A?
+
 If you try to turn the motor by hand now, you should feel some mechanical resistance. Note down the draw of current during this 10 second period.
 
 If you run the same command for the two other phases, the draw of current should be around the same value. Also the felt mechanical resistance should be comparable. The commands for the two other phases are:
