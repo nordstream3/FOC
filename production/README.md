@@ -206,7 +206,10 @@ Again, apply the same test as in "Step 6"
 
 ## Step 8: Test the FREEDRIVE when connected to a BLDC motor
 
-If you were successful so far, increase the voltage to +24V and **set a current limit of 0.3A**.
+If you were successful so far, connect all three phase wires of a BLDC motor to the FREEDRIVE.
+
+Increase the voltage to +24V and **set a current limit of 0.3A**.
+
 Connect to "FREE_DRIVE" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
 
 <img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="700" style="float:left; margin-right:10px;">
@@ -220,7 +223,7 @@ single_bridge_duty 0 0.04 10
 
 (which is equivalent to: Apply 4% duty cycle to phase no. 1 (index zero) for 10 seconds)
 
-> If the drive completely shuts down now, or starts blinking. Did you remember to turn up the current to around 0.3A?
+> If the drive completely shuts down now, or starts blinking. Did you remember to turn up the current to around 0.3A (possibly more for very large motors)?
 
 If you try to turn the motor by hand now, you should feel some mechanical resistance. Note down the draw of current during this 10 second period.
 
