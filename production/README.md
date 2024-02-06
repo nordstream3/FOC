@@ -142,10 +142,11 @@ Follow this procedure in this order:
 
 1. With a set of pliers, on the standard pin headers, pull out the "shared" pins around 1.5 mm with reference to the black plastic spacer.
 2. Solder pin headers to the FreePill.
-3. Mount the FreePill on the back side of the 'Main Module'. (Note: If you want to be able to desolder the two modules later, it's an advantage to remove the plastic spacers on the standard pin headers. By doing so, it's easier to apply heat to the pins so you can pull them out again)
-4. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. The GND and +3V terminals will need a lot of heat. If too much solder is applied, you can scrape it off gently using a hobby knife.
-5. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
-6. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
+3. (Note: If you want to be able to desolder the two modules later, it's an advantage to remove the plastic spacers on the standard pin headers. By doing so, it's easier to apply heat to the pins so you can pull them out again)
+4. Mount the FreePill on the back side of the 'Main Module'.
+5. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. The GND and +3V terminals will need a lot of heat. If too much solder is applied, you can scrape it off gently using a hobby knife.
+6. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
+7. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/1b25a1ec-3314-4709-92e2-f6bb2645d137" width="600" style="float:left;">
 
