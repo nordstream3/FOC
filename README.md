@@ -1,16 +1,14 @@
-## The future is Open Source
-# FREE / DRIVE
+# FREEDRIVE
 
 ## The DIY Open Source Vesc6 and FOC capable HW
-
-![image](https://github.com/nordstream3/FOC/assets/129880401/e7b7ab3b-6d2f-4be4-a6b0-15b167d2bb0e)
-
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/316b892a-555c-4632-94d1-f3a5aa92823f" width="300" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/ffd7d584-e124-4ee1-bf63-155ca58bfea3" width="300" style="float:left;">
+</div>
 
 Date | Manufacturer | amount | includes | shipping & tax | price
 | -------- | -------- | -------- | -------- | -------- | -------- |
 2024-01-17 | JLCPCB | 10 boards | All assembled excl fets and caps | YES, to EU | $241.08
-
-
 
 FreeDrive is an open-source motor controller board based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running FOC at high power and voltages.
 
