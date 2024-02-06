@@ -270,3 +270,5 @@ When mounting and soldering the 330uF capacitors, remember that the three small 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="400" style="float:left; margin-right:10px;">
 
 The FREEDRIVE is now assembled, and you can proceed to the normal procedure of "motor detection" in the VESC Tool.
+
+If you want to 3D print an enclosure for your drive, you can find the .obj-files in the /production folder.
