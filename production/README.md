@@ -203,7 +203,7 @@ Attach a bldc motor to the three phase wires.
 
 Again, apply the same test as in "Step 6"
 
-## Step 8: Test run the motor
+## Step 8: Test the FREEDRIVE when connected to a BLDC motor
 
 If you were successful so far, increase the voltage to +24V and **set a current limit of 0.3A**.
 Connect to "FREE_DRIVE" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
@@ -217,7 +217,7 @@ Write the command:
 single_bridge_duty 0 0.04 10
 ```
 
-(which is equivalent to: Apply 4% duty cycle to phase no. 0 for 10 seconds)
+(which is equivalent to: Apply 4% duty cycle to phase no. 1 (index zero) for 10 seconds)
 
 If you try to turn the motor by hand now, you should feel some mechanical resistance. Note down the draw of current during this 10 second period.
 
@@ -268,3 +268,5 @@ For better thermal management, apply a layer of solder to the top-side exposed c
 When mounting and soldering the 330uF capacitors, remember that the three small pads are positive V_in, and the large exposed copper plane is negative (GND).
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="400" style="float:left; margin-right:10px;">
+
+The FREEDRIVE is now assembled, and you can proceed to the normal procedure of "motor detection" in the VESC Tool.
