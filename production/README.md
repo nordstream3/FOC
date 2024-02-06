@@ -1,6 +1,6 @@
 # Assembly Guide
 
-<img src="https://github.com/nordstream3/FOC/assets/129880401/9e6a898e-c8aa-4e33-9f68-3b07cfdb93b5" width="600" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/9e6a898e-c8aa-4e33-9f68-3b07cfdb93b5" width="400" style="float:left; margin-right:10px;">
 
 Wauw, it looks cool, but unfortunately something has gone wrong in this assembly.
 
