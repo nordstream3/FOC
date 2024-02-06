@@ -171,8 +171,6 @@ At this stage, the board should draw around 0.05A at 16V.
 
 Apply around 0.3 mm of solder to the large exposed copper planes of both sides of the Main Module (however, not anything yet to the "phase" planes in between the mosfets).
 
-You can adjust the "height" of the temperature sensor pad by applying a thin layer of solder to it. This is to encure that there is physical contact with the mosfet for temperature reading.
-
 <img src="../images/20240120_153355.jpg"  width="300" style="float:left; margin-right:10px;">
 
 > Putting a layer of solder on the planes is done for thermal management reasons rather than for enhancing electrical conductivity.
