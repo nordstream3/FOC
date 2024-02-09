@@ -16,18 +16,10 @@ FreeDrive utilizes FOC which is short of Field Oriented Control. The hardware is
 
 POWER BRIDGE | MCU | SUPPLY
 |----|----|----|
-<img src="https://github.com/nordstream3/FOC/assets/129880401/dfa8d088-c647-4df2-9465-01d347643fa1" width="200" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/d6d78281-1cd0-4e21-a1f3-65a6a4564ee2" width="150" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/4d2eaf44-9ddd-4ef6-9fe6-909cf948695a" width="50" style="float:left;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/dfa8d088-c647-4df2-9465-01d347643fa1" width="200" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/23899814-eda4-4109-83fc-18060b6d4e02" width="100" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/7a79abc4-aa75-44de-9f78-ca9ab5f3dfe6" width="50" style="float:left;">
 3 phase power bridge | STM32F405 FREEPILL | +12,+5V,+3V
 
-Advantages of separation into modules?
-* Suitable for further development by DIY people
-* Compatibility with other FOC projects
-* Understanding of FOC HW is easier
-* HW development is cheaper
-* Debugging is easier
 
-Disadvantages
-* Assembly takes longer time. You need to solder 46 pinheader pins manually
 
 The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
 
@@ -61,6 +53,16 @@ The standard design includes 12 mosfets, but it will also work with just 6 fets.
 </div>
 
 [FreeDrive thread on esk8](https://forum.esk8.news/t/f-of-c-open-source-free-of-charge-vesc6-board-in-development-schematics-available/74888/277)
+
+Advantages of separation into modules?
+* Suitable for further development by DIY people
+* Compatibility with other FOC projects
+* Understanding of FOC HW is easier
+* HW development is cheaper
+* Debugging is easier
+
+Disadvantages
+* Assembly takes longer time. You need to solder 46 pinheader pins manually
 
 ## Getting Started
 Prerequisites
