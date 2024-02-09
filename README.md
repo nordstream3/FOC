@@ -1,6 +1,6 @@
 # FREEDRIVE
 
-## The DIY Open Source Vesc6 and FOC capable HW
+## The DIY Open Source Vesc6 and FOC capable HW with onboard IMU
 <div>
 <img src="https://github.com/nordstream3/FOC/assets/129880401/316b892a-555c-4632-94d1-f3a5aa92823f" width="400" style="float:left; margin-right:10px;">
 <img src="https://github.com/nordstream3/FOC/assets/129880401/ffd7d584-e124-4ee1-bf63-155ca58bfea3" width="400" style="float:left;">
@@ -12,7 +12,24 @@ Date | Manufacturer | amount | includes | shipping & tax | price
 
 FreeDrive is an open-source motor controller board based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running FOC at high power and voltages.
 
-FreeDrive utilizes FOC which is short of Field Oriented Control. The hardware is separated in 3 sub-modules: Power, STM32F405 FREE/PILL, and the main module with FOC related components. The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
+FreeDrive utilizes FOC which is short of Field Oriented Control. The hardware is separated in 3 sub-modules which are assembled using standard pin headers.
+
+POWER BRIDGE | MCU | SUPPLY
+|----|----|----|
+<img src="https://github.com/nordstream3/FOC/assets/129880401/dfa8d088-c647-4df2-9465-01d347643fa1" width="200" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/d6d78281-1cd0-4e21-a1f3-65a6a4564ee2" width="150" style="float:left;"> | <img src="https://github.com/nordstream3/FOC/assets/129880401/4d2eaf44-9ddd-4ef6-9fe6-909cf948695a" width="50" style="float:left;">
+3 phase power bridge | STM32F405 FREEPILL | +12,+5V,+3V
+
+Advantages of separation into modules?
+* Suitable for further development by DIY people
+* Compatibility with other FOC projects
+* Understanding of FOC HW is easier
+* HW development is cheaper
+* Debugging is easier
+
+Disadvantages
+* Assembly takes longer time. You need to solder 46 pinheader pins manually
+
+The board is intended for "small" electric vehicles like Skateboards, OneWheels, Bicycles, Robotics, Boats, and is designed in sub-modules as a reference design for further development.
 
 The standard design includes 12 mosfets, but it will also work with just 6 fets. You choose.
 
