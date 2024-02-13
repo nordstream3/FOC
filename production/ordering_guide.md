@@ -65,17 +65,20 @@ When all is done, choose "Next", and you will be presented with a dialog:
 
 Select "Do not place".
 
+<img src="https://github.com/nordstream3/FOC/assets/129880401/eb4aa5be-d4a4-423b-8feb-e367a095fffe" width="200" style="float:left;">
 
-![image](https://github.com/nordstream3/FOC/assets/129880401/9c5dd429-dd3d-4481-bf42-7a76c873ea35)
-![image](https://github.com/nordstream3/FOC/assets/129880401/57e29830-b891-40aa-9f1f-f56863f28611)
-![image](https://github.com/nordstream3/FOC/assets/129880401/eb4aa5be-d4a4-423b-8feb-e367a095fffe)
-![image](https://github.com/nordstream3/FOC/assets/129880401/0649cb7b-0b06-46ef-97de-b08377a9c0f7)
-![image](https://github.com/nordstream3/FOC/assets/129880401/5fb297c0-72a2-4874-ba4e-6a9bfbae675e)
-![image](https://github.com/nordstream3/FOC/assets/129880401/906306c6-3d80-473e-b5e0-4fa147e8fdaf)
-![image](https://github.com/nordstream3/FOC/assets/129880401/d5e896df-a020-4ab3-a556-019d4dd7ea88)
-![image](https://github.com/nordstream3/FOC/assets/129880401/7c25abb4-0ae6-4803-8c9b-492c2c4c33d7)
-![image](https://github.com/nordstream3/FOC/assets/129880401/b6f96403-d176-4810-99dc-00fd9c5190ee)
+
+Image | Components | To Do
+|----|----|----|
+<img src="https://github.com/nordstream3/FOC/assets/129880401/9c5dd429-dd3d-4481-bf42-7a76c873ea35" width="500" style="float:left;"> | 3 Gate Drivers | Rotate all three 180 deg. so white and cyan dots lign up
+<img src="https://github.com/nordstream3/FOC/assets/129880401/906306c6-3d80-473e-b5e0-4fa147e8fdaf" width="150" style="float:left;"> | CYA0650-68UH2 | Nothing. Image missing, but OK
+<img src="https://github.com/nordstream3/FOC/assets/129880401/d5e896df-a020-4ab3-a556-019d4dd7ea88" width="150" style="float:left;"> | CAN Driver | Rotate 180 deg.
+<img src="https://github.com/nordstream3/FOC/assets/129880401/7c25abb4-0ae6-4803-8c9b-492c2c4c33d7" width="400" style="float:left;"> | 3 Op Amps | Rotate all three 180 deg. so legs match pads
+<img src="https://github.com/nordstream3/FOC/assets/129880401/b6f96403-d176-4810-99dc-00fd9c5190ee" width="200" style="float:left;"> | IMU | Rotate 90 deg. right
+
+
+
+
 ![image](https://github.com/nordstream3/FOC/assets/129880401/b0895cf7-5900-4ef2-83c9-59fa5d4e2a93)
 ![image](https://github.com/nordstream3/FOC/assets/129880401/aedc2241-3bd2-4054-baec-9be55176529a)
-
 
