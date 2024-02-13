@@ -36,5 +36,18 @@ When you have successfully uploaded the BOM and CPL click on "Process BOM & CPL"
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/266d4226-bf7f-43dd-bc55-7330815aef22)
 
-Which is in fact not an error, but a notice that there is a mismatch between BOM and CPL, since the CPL only contains coordinates of components on the **top side** of the pcb. Importantly, you should click on "Continue".
+Which is in fact not an error, but a notice that there is a mismatch between BOM and CPL, since the CPL only contains coordinates of components on the **top side** of the pcb. 
+
+Importantly, you should click on "Continue", and you will presented with a **long** list of all the components matched in the BOM & CPL.
+
+Scroll down the list to find if there are any components that falls short:
+
+![image](https://github.com/nordstream3/FOC/assets/129880401/0c6b2d77-0f82-404a-b278-cccca2f03bd2)
+
+At the time of writing, jlcpcb falls short of almost anything that looks like a diode in their **Basic Library**.  
+If you can live with blue or yellow LEDS, these colors are available in their **basic library**. For the 2 Zener Diodes, you will need to find replacements for these in the **Extended Library**.
+
+> FreeDRIVE is optimized for lowest jlcpcb price. Where possible, **basic library** is always first choice.  
+> Basic Library: These are the components pre-loaded in the SMD Automatic Pick and Place Machine.  
+> Extended Library: These are the components requiring manual setup, and if you will be charged an extra fee per component type.
 
