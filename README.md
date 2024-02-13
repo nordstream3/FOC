@@ -12,7 +12,7 @@ Date | Manufacturer | amount | includes | shipping & tax | price
 
 FreeDrive is an open-source motor controller board based on a JLCPCB friendly [VESC6 75V/300A](https://vesc-project.com/sites/default/files/Benjamin%20Posts/vesc_75_300.pdf) so-called "driverless" design with individual gate drivers for all three phases. It is powered by an STM32F405 MCU and is capable of running FOC at high power and voltages.
 
-FreeDrive utilizes FOC which is short of Field Oriented Control. The hardware is separated in 3 sub-modules which are assembled using standard pin headers.
+FreeDrive is a motor controller designed for FOC (Field Oriented Control) and HFI (High Frequency Injection), a sensorless teqnique enabling full torque at zero speed without sensor feedback. The hardware is separated in 3 sub-modules which are assembled using standard pin headers.
 
 POWER BRIDGE | MCU | SUPPLY
 |----|----|----|
@@ -64,26 +64,16 @@ Advantages of separation into modules?
 Disadvantages
 * Assembly takes longer time. You need to solder 46 pinheader pins manually
 
-## Getting Started
-Prerequisites
-To use FreeDrive, you will need the following:
-* A brushless motor
-* A power source capable of supplying up to 75V and 150A. Minimum voltage is 16V
-* A USB-C cable to connect to a computer for programming and configuration
-* Motor control software, such as the VESC firmware
+## Ordering at JLCPCB.COM
 
-## Installation
-To install the FreeDrive board, follow these steps:
+In the /production folder there is a guide for the [ordering procedure](./production/ordering_guide.md).
 
-* Order the PCB from JLCPCB using the provided gerber files
-* JLCPCB can offer the service of mounting all components, with the exception of mosfets
-* Purchase the necessary components (BOM available in the repository)
-* Solder the remaining components onto the PCB
-* Program the firmware onto the board using a programmer (STLINK, Stm32f4Discovery, or an existing VESC)
-* Connect the motor, power source, and USB cable
+## Assembly
+
+Similarly, there is a guide for the [assembly procedure](./production/README.md).
 
 ## Usage
-After installation, use the VESC Tool to configure the motor controller according to your specific motor and application requirements.
+Use the [VESC Tool](https://vesc-project.com/vesc_tool) to configure the motor controller according to your specific motor and application requirements.
 
 ## Contributions
 Contributions to The FreeDrive project are welcome and encouraged. If you have any suggestions or improvements, please open an issue or a pull request on the GitHub repository.
