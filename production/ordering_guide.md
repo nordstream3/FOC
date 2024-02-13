@@ -40,26 +40,42 @@ Which is in fact not an error, but a notice that there is a mismatch between BOM
 
 Importantly, you should click on "Continue", and you will presented with a **long** list of all the components matched in the BOM & CPL.
 
-Scroll down the list to find if there are any components that falls short:
+Scroll down the list to find if there are any components that fall short:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/0c6b2d77-0f82-404a-b278-cccca2f03bd2)
 
-At the time of writing, jlcpcb falls short of almost anything that looks like a diode in their **Basic Library**.  
-If you can live with blue or yellow LEDS, these colors are available in their **basic library**. For the 2 Zener Diodes, you will need to find replacements for these in the **Extended Library**.
+At the time of writing, jlcpcb falls short of almost anything that smells like a diode in their **Basic Library**.  
+If you can live with blue or yellow LEDS, these colors are available in **basic library** versions. For the 2 Zener Diodes, you will need to find replacements for these in the **Extended Library**.
 
 > FreeDRIVE is optimized for lowest jlcpcb price. Where possible, **basic library** is always first choice.  
 > Basic Library: These are the components pre-loaded in the SMD Automatic Pick and Place Machine.  
 > Extended Library: These are the components requiring manual setup, and you will be charged an extra fee per component type.
 
-After you have found replacements for any components marked with "shortfall", you should scroll to find the "Connector_PinHeader_2.54mm footprints:
+After you have found replacements for any shortfall components, you should scroll to find the "Connector_PinHeader_2.54mm footprints:
 ![image](https://github.com/nordstream3/FOC/assets/129880401/5552c263-93cb-4ac6-b863-2c156b197f62)
 
 Importantly, you must **deselect** these two connector types.
+
+Also, **deselect** the large 330uF Capacitors. We want to solder these manually.
+![image](https://github.com/nordstream3/FOC/assets/129880401/14ed772c-012e-47b4-9475-35be82235ff5)
 
 When all is done, choose "Next", and you will be presented with a dialog:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/ab6f0623-c9d0-4346-9c47-24c949097522)
 
 Select "Do not place".
+
+
+![image](https://github.com/nordstream3/FOC/assets/129880401/9c5dd429-dd3d-4481-bf42-7a76c873ea35)
+![image](https://github.com/nordstream3/FOC/assets/129880401/57e29830-b891-40aa-9f1f-f56863f28611)
+![image](https://github.com/nordstream3/FOC/assets/129880401/eb4aa5be-d4a4-423b-8feb-e367a095fffe)
+![image](https://github.com/nordstream3/FOC/assets/129880401/0649cb7b-0b06-46ef-97de-b08377a9c0f7)
+![image](https://github.com/nordstream3/FOC/assets/129880401/5fb297c0-72a2-4874-ba4e-6a9bfbae675e)
+![image](https://github.com/nordstream3/FOC/assets/129880401/906306c6-3d80-473e-b5e0-4fa147e8fdaf)
+![image](https://github.com/nordstream3/FOC/assets/129880401/d5e896df-a020-4ab3-a556-019d4dd7ea88)
+![image](https://github.com/nordstream3/FOC/assets/129880401/7c25abb4-0ae6-4803-8c9b-492c2c4c33d7)
+![image](https://github.com/nordstream3/FOC/assets/129880401/b6f96403-d176-4810-99dc-00fd9c5190ee)
+![image](https://github.com/nordstream3/FOC/assets/129880401/b0895cf7-5900-4ef2-83c9-59fa5d4e2a93)
+![image](https://github.com/nordstream3/FOC/assets/129880401/aedc2241-3bd2-4054-baec-9be55176529a)
 
 
