@@ -1,4 +1,4 @@
-# FREEDRIVE
+# FreeDRIVE
 
 ## The DIY Open Source Vesc6 and FOC capable HW with onboard IMU
 <div>
