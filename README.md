@@ -70,7 +70,9 @@ In the /production folder there is a guide for the [ordering procedure](./produc
 
 ## Assembly
 
-Similarly, there is a guide for the [assembly procedure](./production/README.md).
+Below is an image of the whole kit needed for assemble. The guide for the [assembly procedure](./production/README.md) is in the /production folder.
+
+<img src="https://github.com/nordstream3/FOC/assets/129880401/f58cc206-b7ed-49ce-b436-6f655d200584" width="400" style="float:left; margin-right:10px;">
 
 ## Usage
 Use the [VESC Tool](https://vesc-project.com/vesc_tool) to configure the motor controller according to your specific motor and application requirements.
@@ -88,3 +90,7 @@ FreeDrive is released under the CERN Open Hardware License (OHL), developed by t
 
 ## Acknowledgements
 FreeDrive is built on the work of the [VESC project](https://github.com/vedderb/bldc) and the contributions of its developers and contributors. Many thanks to *mxlemming* (aka [David Molony](https://github.com/davidmolony/MESC_FOC_ESC)) and *crinq* on the vesc forum on discord for their careful review and advice. Also this project is inspired by the format and concept of the [MP2](https://github.com/badgineer/MP2-ESC) by *badgineer* and the [Cheap Focer2](https://github.com/shamansystems/Cheap-FOCer-2/blob/Developer-Branch/README.md) by *shaman*.
+
+><span style="font-size:0.5em;">[markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/)</span>
+
+>[www.markdownguide.org/hacks/](https://www.markdownguide.org/hacks/)
