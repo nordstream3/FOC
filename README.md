@@ -64,11 +64,11 @@ Advantages of separation into modules?
 Disadvantages
 * Assembly takes longer time. You need to solder 46 pinheader pins manually
 
-## Ordering at JLCPCB.COM
+## How to order at JLCPCB.COM
 
 In the /production folder there is a guide for the [ordering procedure](./production/ordering_guide.md).
 
-## Assembly
+## How to assemble
 
 Below is an image of the whole kit needed for assemble. The guide for the [assembly procedure](./production/README.md) is in the /production folder.
 
