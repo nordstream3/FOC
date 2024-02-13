@@ -65,7 +65,13 @@ When all is done, choose "Next", and you will be presented with a dialog:
 
 Select "Do not place".
 
+## Fix component rotational misalignments
+
+You should now be presented with a rough render of the smd layout, where you need to fix a few issues by using the "rotate left" and "rotate right" buttons in the top menu.
+
 <img src="https://github.com/nordstream3/FOC/assets/129880401/eb4aa5be-d4a4-423b-8feb-e367a095fffe" width="200" style="float:left;">
+
+These are the issues:
 
 
 Image | Components | To Do
@@ -76,9 +82,18 @@ Image | Components | To Do
 <img src="https://github.com/nordstream3/FOC/assets/129880401/7c25abb4-0ae6-4803-8c9b-492c2c4c33d7" width="400" style="float:left;"> | 3 Op Amps | Rotate all three 180 deg. so legs match pads
 <img src="https://github.com/nordstream3/FOC/assets/129880401/b6f96403-d176-4810-99dc-00fd9c5190ee" width="200" style="float:left;"> | IMU | Rotate 90 deg. right
 
+## Overview of fixed smd layout
 
-
+When the alignment issues are solved, the rendered smd layout should look like this:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/b0895cf7-5900-4ef2-83c9-59fa5d4e2a93)
+
+## Finalizing
+
+Finally, you will be presented with an overview of price and build time.
+
 ![image](https://github.com/nordstream3/FOC/assets/129880401/aedc2241-3bd2-4054-baec-9be55176529a)
 
+Click on "Save to cart".
+
+Your order is now added to your Shopping Cart, and you should **proceed to payment**.
