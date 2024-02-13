@@ -25,8 +25,16 @@ Leave the remaining choices at their defaults and scroll to the bottom of the pa
 
 After your confirmation, you will be presented with a kind of Wizard, with the first page showing a top view of the pcb.
 
-Click "Next" to the relevant page for upload of BOM and CPL files.
+Click "Next" to go to the relevant page for upload of BOM and CPL files.
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/09f819ce-4bdc-4bc4-87c6-56ad387d1e9e)
 
-Follow [this](./gerber.zip) link to download the gerber zip file located in the /production folder.
+Follow [this](./bom.csv) link to download the BOM located in the /production folder.  
+Follow [this](./foc_cpl_top.csv) link to download the CPL located in the /production folder.
+
+When you have successfully uploaded the BOM and CPL click on "Process BOM & CPL", whereafter you will be presented with an "ERROR".
+
+![image](https://github.com/nordstream3/FOC/assets/129880401/266d4226-bf7f-43dd-bc55-7330815aef22)
+
+Which is in fact not an error, but a notice that there is a mismatch between BOM and CPL, since the CPL only contains coordinates of components on the **top side** of the pcb. Importantly, you should click on "Continue".
+
