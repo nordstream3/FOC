@@ -92,4 +92,5 @@ FreeDrive is released under the CERN Open Hardware License (OHL), developed by t
 FreeDrive is built on the work of the [VESC project](https://github.com/vedderb/bldc) and the contributions of its developers and contributors. Many thanks to *mxlemming* (aka [David Molony](https://github.com/davidmolony/MESC_FOC_ESC)) and *crinq* on the vesc forum on discord for their careful review and advice. Also this project is inspired by the format and concept of the [MP2](https://github.com/badgineer/MP2-ESC) by *badgineer* and the [Cheap Focer2](https://github.com/shamansystems/Cheap-FOCer-2/blob/Developer-Branch/README.md) by *shaman*.
 
 ><sub>[markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/)</sub>  
-><sub>[www.markdownguide.org/hacks/](https://www.markdownguide.org/hacks/)</sub>
+><sub>[www.markdownguide.org/hacks/](https://www.markdownguide.org/hacks/)</sub>  
+><sub>[support.squarespace.com Markdown-cheat-sheet](https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet)
