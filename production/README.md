@@ -272,8 +272,12 @@ For better thermal management, apply a layer of solder to the top-side exposed c
 
 
 When mounting and soldering the 330uF capacitors, remember that the three small pads are positive V_in, and the large exposed copper plane is negative (GND).
-
-<img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="400" style="float:left; margin-right:10px;">
+<div>
+<img src="https://github.com/nordstream3/FOC/assets/129880401/d6b5e114-6ef0-4603-824e-47837991d553"  width="200" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/1a044613-dddd-41fb-a8d2-040d4a46ab82"  width="200" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/dc8d39df-9a87-4569-9016-bcd605a77b30"  width="200" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="200" style="float:left;">
+</div>
 
 The FREEDRIVE is now assembled, and you can proceed to the normal procedure of "motor detection" in the VESC Tool.
 
