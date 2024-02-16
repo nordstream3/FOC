@@ -2,8 +2,8 @@
 
 ## The DIY Open Source Vesc6 and FOC capable HW with onboard IMU
 <div>
-<img src="https://github.com/nordstream3/FOC/assets/129880401/316b892a-555c-4632-94d1-f3a5aa92823f" width="400" style="float:left; margin-right:10px;">
-<img src="https://github.com/nordstream3/FOC/assets/129880401/ffd7d584-e124-4ee1-bf63-155ca58bfea3" width="400" style="float:left;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/316b892a-555c-4632-94d1-f3a5aa92823f" width="300" style="float:left; margin-right:10px;">
+<img src="https://github.com/nordstream3/FOC/assets/129880401/ffd7d584-e124-4ee1-bf63-155ca58bfea3" width="300" style="float:left;">
 </div>
 
 Date | Manufacturer | amount | includes | shipping & tax | price
