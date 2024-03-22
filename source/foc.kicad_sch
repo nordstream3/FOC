@@ -3999,7 +3999,7 @@
       (reference "R88") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/64b117fb-212c-4b17-8f2f-7c4db3eb0d00/60cafb6c-4d7f-42eb-9f42-1351e5e1b1c9"
-      (reference "R89") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R89") (unit 1) (value "5k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/64b117fb-212c-4b17-8f2f-7c4db3eb0d00/cf5b3a0b-5247-4e53-b04b-23059c5becb6"
       (reference "R90") (unit 1) (value "20k") (footprint "Resistor_SMD:R_0603_1608Metric")
