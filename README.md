@@ -32,9 +32,10 @@ The standard design includes 12 mosfets, but it will also work with just 6 fets.
 * 4-layer pcb design with individual gate drivers for all three phases
 * STM32F405 MCU
 * USB-C
-* CAN
+* CAN, 5 mbps
 * Onboard IMU
-* 12V AUX Power (for e.g. light or ?)
+* Momentary on/off switch connection via 4-pin jst connector
+* Led data pin for programmable LEDs
 * Compact design with fets mounted on the bottom side
 * 12V for gate drivers, 5V for CAN and IMU, and 3.3V for MCU and op-amped current-sense amplification
 * Cheap and up-to-date with cheapest and **well stocked** components available for ordering at [JLCPCB](https://jlcpcb.com/) and [LCSC](https://www.lcsc.com)
