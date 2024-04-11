@@ -5,11 +5,11 @@
 Wauw, it looks cool, but unfortunately something has gone wrong in this assembly.
 
 
-What we want to build here will look like this:
+What we want to build here will look something like this:
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/da2cea22-1f1f-4b8b-ab5b-a13add054a24" width="400" style="float:left; margin-right:10px;">
 
-> The 3d printed enclosure you can find in the /production folder as obj files. You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
+> (This is an image of an old version) The 3d printed enclosure you can find in the /production folder as obj files. You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
 
 For a complete assembly of Free Drive you will need:
 
@@ -20,7 +20,7 @@ Pcs | Part | LCSC order no.
 1 | Pre-assembled pcb
 46 | Standard pin header pins | C7494870
 6 or 12 | Mosfets of type CRST030N10N | C841369
-6 | 330uF Aluminum Electrolytic Capacitors D10xL25mm | C443085
+2 | 680uF Aluminum Electrolytic Capacitors D10xL25mm | C443095
 3 | Female banana bullet connectors | C99865
 1 | XT90H-M Male battery connector | C3040683
 1 | JST	1x7P XH 2.5mm | C144398
