@@ -92,3 +92,12 @@ Finally, you will be presented with an overview of price and build time.
 Click on "Save to cart".
 
 Your order is now added to your Shopping Cart, and you should **proceed to payment**.
+
+## Remember to order the remaining components that you need to manually solder
+* Mosfet
+* 2 680uF Capacitors
+* 4 1x20 Machine header pins
+* JST Connectors
+* etc.
+
+These components are listed in the [Assembly Guide](https://github.com/nordstream3/FOC/edit/main/production/README.md) with LCSC part numbers and AliExpress links.
