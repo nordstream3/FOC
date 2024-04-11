@@ -100,4 +100,4 @@ Your order is now added to your Shopping Cart, and you should **proceed to payme
 * JST Connectors
 * etc.
 
-These components are listed in the [Assembly Guide](https://github.com/nordstream3/FOC/edit/main/production/README.md) with LCSC part numbers and AliExpress links.
+These components are listed in the [Assembly Guide](https://github.com/nordstream3/FOC/edit/main/production) with LCSC part numbers and AliExpress links.
