@@ -43,7 +43,7 @@ Importantly, you should click on "Continue", and you will presented with a **lon
 Scroll down the list to find if there are any components that fall short:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/0c6b2d77-0f82-404a-b278-cccca2f03bd2)
-
+> This is just an example! There might not necessarily be any shortfalls.  
 > FreeDRIVE is optimized for lowest jlcpcb price. Where possible, **basic library** is always first choice.  
 > Basic Library: These are the components pre-loaded in the SMD Automatic Pick and Place Machine.  
 > Extended Library: These are the components requiring manual setup, and you will be charged an extra fee per component type.
@@ -51,9 +51,9 @@ Scroll down the list to find if there are any components that fall short:
 After you have found replacements for any shortfall components, you should scroll to find the "Connector_PinHeader_2.54mm footprints:
 ![image](https://github.com/nordstream3/FOC/assets/129880401/5552c263-93cb-4ac6-b863-2c156b197f62)
 
-Importantly, you must **deselect** these two connector types.
+Importantly, you must **deselect** all 2.54mm pin headers.
 
-When all is done, choose "Next", and you will be presented with a dialog:
+When this is done, choose "Next", and you will be presented with a dialog:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/ab6f0623-c9d0-4346-9c47-24c949097522)
 
