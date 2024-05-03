@@ -6,6 +6,8 @@
 <img src="https://github.com/nordstream3/FOC/assets/129880401/ffd7d584-e124-4ee1-bf63-155ca58bfea3" width="300" style="float:left;">
 </div>
 
+[![IMAGE ALT TEXT](https://github.com/nordstream3/FOC/assets/129880401/6b1483e7-21d7-4d83-af18-93e87dd7afbc)](http://www.youtube.com/watch?v=JBFUDh6qiMs "FreeDRIVE")
+
 Date | Manufacturer | amount | includes | shipping & tax | price
 | -------- | -------- | -------- | -------- | -------- | -------- |
 2024-01-17 | JLCPCB | 10 boards | All assembled excl fets and caps | YES, to EU | $241.08
