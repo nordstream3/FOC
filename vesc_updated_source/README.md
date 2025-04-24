@@ -5,7 +5,7 @@ On the target system, ensure you have a copy of dir_original (e.g vesc v. 6.05) 
 patch -p1 -d dir_original < updates.patch
 
 example:
-patch -p1 -d ./bldc-release_6_05 < vesc_foc_king20_bmi270.patch
+patch -p2 -d ./bldc-release_6_05 < vesc_foc_king20_bmi270.patch
 
 Explanation:
 -p1: Strips the first level of directory from the paths in the patch.
