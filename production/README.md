@@ -11,7 +11,7 @@ What we want to build here will look something like this:
 
 > (This is an image of an old version) The 3d printed enclosure you can find in the /production folder as obj files. You don't necessarily need an enclosure, but it will protect the components from short circuits etc.
 
-For a complete assembly of Free Drive you will need:
+For a complete assembly of the board you will need:
 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/f58cc206-b7ed-49ce-b436-6f655d200584" width="600" style="float:left; margin-right:10px;">
 
@@ -38,7 +38,7 @@ x | 3D printed enclosure (production folder)
 
 > The board is produced by the manufacturer as a single pcb. JLCPCB will charge you for the number of designs on a pcb, but this is a single design where the modules are going to be assembled to a single unit. The separation is just for convenience purposes and none of the modules will work on their own.
 
-The 3 modules are connected by taps, and you separate these using a suitable manual saw. Be careful not to damage the traces on the FREE/PILL and POWER modules in particular, as the traces here are close to the edges.
+The 3 modules are connected by taps, and you separate these using a suitable manual saw. Be careful not to damage the traces on the PILL and POWER modules in particular, as the traces here are close to the edges.
 
 <div>
 <img src="../images/20240120_114045.jpg" width="300" style="float:left; margin-right:10px;">
@@ -55,9 +55,9 @@ Test or you will regret that you didn't!
 | -------- |
 
 
-## Step 1: Uploading Firmware and testing FREE/PILL
+## Step 1: Uploading Firmware and testing the PILL
 
-FREEPILL can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
+The Pill can be powered from USB +5V by temporarily bridging the two pads next to the USB-C connector.
 
 <div>
 <img src="../images/20240120_115645.jpg" width="300" style="float:left; margin-right:10px;">
@@ -65,7 +65,7 @@ FREEPILL can be powered from USB +5V by temporarily bridging the two pads next t
 <img src="../images/20240120_121407.jpg" width="300" style="float:left;">
 </div>
 
-Now, Connect the FreePill via a USB-C cable to your computer.
+Now, Connect the Pill via a USB-C cable to your computer.
 In this example I use a STM32F4 Discovery board for uploading firmware, but there are other options available:
 
 [Existing VESC hardware](https://www.youtube.com/watch?v=PFFiVxFHDM4&t=312s)
@@ -94,7 +94,7 @@ Next, flash the Vesc firmware, also to address 0x08000000. Can also be found in 
 
 <img src="../images/Screenshot from 2024-01-20 12-08-56.png"  width="600" style="float:left; margin-right:10px;">
 
-Once you have flashed the firmware and the FreePill is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in the Vesc Tool under the name "FREE_DRIVE".
+Once you have flashed the firmware and the Pill is booted, the LEDs on the board will show a constant green light and a blinking red light. You should be able to discover the board in the Vesc Tool under the name "FOC_KING".
 
 <div>
 <img src="../images/20240120_121016.jpg" width="450" style="float:left;">
@@ -102,7 +102,7 @@ Once you have flashed the firmware and the FreePill is booted, the LEDs on the b
 </div>
 
 
-**REMEMBER** to remove the solder bridge again. The assembled FreeDrive will **NOT** work properly if powered by USB.
+**REMEMBER** to remove the solder bridge again. The assembled board will **NOT** work properly if powered by USB.
 | ------- |
 <div>
 <img src="../images/pow_pads.png" width="200" style="float:left;">
@@ -120,7 +120,7 @@ Connect the Power Module to a power supply as shown on the image below. Be VERY 
 
 The module is working properly when the LED on the module shows a constant blue light.
 
-## Step 3: Solder FreePill and Main Module together
+## Step 3: Solder the Pill and Main Module together
 
 Some JST connectors will overlap with the Pill at the terminals marked with red:
 
@@ -128,7 +128,7 @@ Some JST connectors will overlap with the Pill at the terminals marked with red:
 <img src="https://github.com/nordstream3/FOC/assets/129880401/99fdda21-d9fe-4e09-8cc0-22bf581b20a4" width="400" style="float:left; margin-right:10px;">
 </div>
 
-This is a challenge, because we are going to solder the FreePill and Main Module together using standard pin headers. Because terminals are shared with JST connectors, we remove the pins of the JST sockets where there is overlap, and then the pin-header pins with replace these.
+This is a challenge, because we are going to solder the Pill and Main Module together using standard pin headers. Because terminals are shared with JST connectors, we remove the pins of the JST sockets where there is overlap, and then the pin-header pins with replace these.
 
 To end up with a proper JST-pin length, we need to pull out the pin-header pins around 1.5 mm at these spots.
 
@@ -142,10 +142,10 @@ To end up with a proper JST-pin length, we need to pull out the pin-header pins 
 Follow this procedure in this order:
 
 1. With a set of pliers, on the standard pin headers, pull out the "shared" pins around 1.5 mm with reference to the black plastic spacer.
-2. Solder pin headers to the FreePill.
+2. Solder pin headers to the Pill.
 3. (Note: If you want to be able to desolder the two modules later, it's an advantage to remove the plastic spacers on the standard pin headers. By doing so, it's easier to apply heat to the pins so you can pull them out again)
-4. Mount the FreePill on the back side of the 'Main Module'.
-5. On the front side of the Main Module, solder the FreePill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. The GND and +3V terminals will need a lot of heat. If too much solder is applied, you can scrape it off gently using a hobby knife.
+4. Mount the Pill on the back side of the 'Main Module'.
+5. On the front side of the Main Module, solder the Pill pins to the Main Module. Where you see cutouts for JST connectors, be VERY careful to apply only the slightest amount of solder, or else you will be in trouble when mounting the "plastic only" part of these JSTs later. The GND and +3V terminals will need a lot of heat. If too much solder is applied, you can scrape it off gently using a hobby knife.
 6. Pull out JST pins of the JST sockets in those locations where they overlap with the pin-headers that you've already soldered.
 7. Carefully, mount these sockets in their respective places on top of the respective pins (pin headers).
 
@@ -205,17 +205,17 @@ Attach a bldc motor to the three phase wires.
 
 Again, apply the same test as in "Step 6"
 
-## Step 8: Test the FREEDRIVE when connected to a BLDC motor
+## Step 8: Test the board when connected to a BLDC motor
 
-If you were successful so far, connect all three phase wires of a BLDC motor to the FREEDRIVE.
+If you were successful so far, connect all three phase wires of a BLDC motor to the board.
 
 Increase the voltage to +24V and **set a current limit of 0.3A**.
 
-Connect to "FREE_DRIVE" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
+Connect to "FOC_KING" in the Vesc Tool and go to the "Vesc Dev Tools" menu and type the command "help". This should give you a long list of available developer command line options.
 
 <img src="../images/Screenshot from 2024-01-20 16-49-27.png"  width="700" style="float:left; margin-right:10px;">
 
-Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FreeDrive firmware).
+Scroll up til you find the "single_bridge_duty" command (a very helpful command currently only available for the FOC_KING firmware).
 Write the command:
 
 ```
@@ -280,6 +280,6 @@ When mounting and soldering the 330uF capacitors, remember that the three small 
 <img src="https://github.com/nordstream3/FOC/assets/129880401/35347a95-2e42-433b-b364-f8e1caa4d5fa" width="200" style="float:left;">
 </div>
 
-The FREEDRIVE is now assembled, and you can proceed to the normal procedure of "motor detection" in the VESC Tool.
+The board is now assembled, and you can proceed to the normal procedure of "motor detection" in the VESC Tool.
 
 If you want to 3D print an enclosure for your drive, you can find the .obj-files in the /production folder.
