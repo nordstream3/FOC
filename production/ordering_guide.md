@@ -44,7 +44,7 @@ Scroll down the list to find if there are any components that fall short:
 
 ![image](https://github.com/nordstream3/FOC/assets/129880401/0c6b2d77-0f82-404a-b278-cccca2f03bd2)
 > This is just an example! There might not necessarily be any shortfalls.  
-> FreeDRIVE is optimized for lowest jlcpcb price. Where possible, **basic library** is always first choice.  
+> FOC_KING is optimized for lowest jlcpcb price. Where possible, **basic library** is always first choice.  
 > Basic Library: These are the components pre-loaded in the SMD Automatic Pick and Place Machine.  
 > Extended Library: These are the components requiring manual setup, and you will be charged an extra fee per component type.
 
