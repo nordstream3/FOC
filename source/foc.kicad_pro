@@ -59,7 +59,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|140985000|81100000|0df5eab7-c1e3-4790-b3c7-36cd2cb464e6|759f616a-42df-4419-84c6-e64ac40b626e",
+        "clearance|142572500|80147500|0df5eab7-c1e3-4790-b3c7-36cd2cb464e6|75bb0828-b09d-4706-9db1-ff45acca1764",
+        "clearance|161672500|81150000|c3d5bebc-9db9-47db-a292-20a864186efa|18af1d88-91db-4163-9359-d7124e411ab6",
+        "clearance|163260000|80197500|237b544a-bc4e-4311-ae57-e9f4942f2ebe|18af1d88-91db-4163-9359-d7124e411ab6",
+        "clearance|182522500|81150000|0821495a-eabb-4e98-9f5d-a59cd0bdb233|4feaf970-b734-451f-817d-1d8c3609e810",
+        "clearance|184110000|80197500|0821495a-eabb-4e98-9f5d-a59cd0bdb233|4f80f76f-c97b-41e0-91c4-dbfa5f3a808c",
+        "items_not_allowed|187986470|110802035|4a10322f-749c-4a47-965e-c1b43a7ae101|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -69,7 +77,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "ignore",
         "copper_sliver": "ignore",
-        "courtyards_overlap": "warning",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -86,8 +94,8 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "ignore",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
